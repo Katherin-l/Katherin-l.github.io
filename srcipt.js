@@ -47,16 +47,17 @@ const header = document.querySelector("header");
 const footer = document.querySelector("footer");
 
 header.innerHTML= `
-<div class="logo"><img src="Imagenes/logo.png" height="140px" width="150px"></div>
+<div class="logo"><img src="Imagenes/logo.png" height="100px" width="110px"></div>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
+        <div class="navbar">
             <nav class="nav-bar">
                 <ul>
                     <li>
-                        <a href="index.html" class="btns active">Home</a>
+                        <a href="index.html" class=" active">Home</a>
                     </li>
                     <li>
                         <a href="nosotros.html" class="btns">Nosotros</a>
@@ -75,6 +76,7 @@ header.innerHTML= `
                     </li>
                 </ul>
             </nav>
+        </div>
 `;
 footer.innerHTML= `
 <div class="final">
@@ -118,6 +120,17 @@ footer.innerHTML= `
             </div>
         </div>
 `;
+//MENU
+navbar = document.querySelector(".navbar").querySelectorAll("a");
+console.log(navbar);
+
+navbar.forEach(element =>{
+    element.addEventListener("click", function(){
+        navbar.forEach(nav=>nav.classList.remove("active"))
+
+        this.classList.add("active");
+    })
+});
 
 // NUESTRO EQUIPO
 var swiper = new Swiper(".team-swiper", {
