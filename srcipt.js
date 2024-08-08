@@ -47,36 +47,37 @@ const header = document.querySelector("header");
 const footer = document.querySelector("footer");
 
 header.innerHTML= `
-<div class="logo"><img src="Imagenes/logo.png" height="100px" width="110px"></div>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <div class="navbar">
-            <nav class="nav-bar">
-                <ul>
-                    <li>
-                        <a href="index.html" class=" active">Home</a>
-                    </li>
-                    <li>
-                        <a href="nosotros.html" class="btns">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="producto.html" class="btns">Productos</a>
-                    </li>
-                    <li>
-                        <a href="servicios.html">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="calidad.html">Calidad</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+ <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="Imagenes/logo.png" width="auto" height="100px">
+            </a>
+            <ul>
+                <li>
+                    <a href="index.html" class=" active">Home</a>
+                </li>
+                <li>
+                    <a href="nosotros.html" class="btns">Nosotros</a>
+                </li>
+                <li>
+                    <a href="producto.html" class="btns">Productos</a>
+                </li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="calidad.html">Calidad</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+       
+      
 `;
 footer.innerHTML= `
 <div class="final">
@@ -120,17 +121,6 @@ footer.innerHTML= `
             </div>
         </div>
 `;
-//MENU
-navbar = document.querySelector(".navbar").querySelectorAll("a");
-console.log(navbar);
-
-navbar.forEach(element =>{
-    element.addEventListener("click", function(){
-        navbar.forEach(nav=>nav.classList.remove("active"))
-
-        this.classList.add("active");
-    })
-});
 
 // NUESTRO EQUIPO
 var swiper = new Swiper(".team-swiper", {
