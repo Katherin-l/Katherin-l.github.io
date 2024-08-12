@@ -76,7 +76,7 @@ header.innerHTML= `
                 </li>
             </ul>
         </nav>
-       
+     
       
 `;
 footer.innerHTML= `

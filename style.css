@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Zain:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Zain:wght@200;300;400;700;800;900&display=swap');
 
 *{
     margin: 0;
@@ -20,13 +20,16 @@ html{
   scroll-behavior: smooth;
 }
 :root{
-  --main-color: #008148;
+  --main-color: #1b1b1b;
+  --main-color2:#f0bd6e;
   --second-color: #1e3932;
 }
+
 nav{
-  background: #008148;
+  background: #017143;
   height: 100px;
   width: 100%;
+
 }
 .enlace{
   position: absolute;
@@ -163,7 +166,7 @@ li a.active, li a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 8%;
+  padding-top: 4%;
   padding-bottom: 50px;
   
 }
@@ -225,6 +228,12 @@ li a.active, li a:hover{
   .logos-slide img {
     height: 150px;
     margin: 0 40px;
+    
+  }
+  .logos-slide .c1{
+    width: 200px;
+    height: 150px;
+    object-fit: scale-down;
   }
   .cert .certificacion h3{
     font-size: 6rem;
@@ -244,15 +253,53 @@ li a.active, li a:hover{
   
 }
 .presentacion .img-pr{
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 10px;
-  margin-top: 50px;
+  align-items: center;
+  margin-left: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 180px);
+  grid-gap: 200px;
 }
+
 .presentacion .img-pr img {
-  max-width: 650px;
-  
+  max-width: 500px;
+  max-height: 350px;
+  border-radius: 5px;
+}
+.img-pr p{
+  display: flex;
+  position: absolute;
+  top: 35%;
+  font-size: 1.2em;
+  color: #fff;
+  padding-left: 10px;
+}
+.img-pr .p1{
+  position: absolute;
+  top: 85%;
+  font-size: 1.2em;
+  color: #fff;
+  padding-left: 10px;
+}
+.img-pr .p2{
+  position: absolute;
+  top: 35%;
+  font-size: 1.2em;
+  color: #fff;
+  right: 120px;
+  text-align: end;
+  align-items: center;
+}
+.img-pr .p3{
+  position: absolute;
+  top: 85%;
+  font-size: 1.2em;
+  color: #fff;
+  right: 150px;
+}
+
+.presentacion .sec1{
+  width: 35%;
 }
 .presentacion .sec1 h2{
   color: #333;
@@ -272,7 +319,6 @@ li a.active, li a:hover{
     text-align: center;
     text-align: justify;
 }
-
 .counters{
 	padding: 3em 2em;
 	background: linear-gradient(rgba(5, 7, 12, 0.46), rgba(5, 7, 12, 0.46)), url(Imagenes/cesta.jpg);
@@ -448,6 +494,61 @@ svg path:hover {
     text-decoration: none;
     color: #fff;
     transition: all 0.5s ease-out;
+}
+.tabla1{
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-height: 100vh;
+  margin: 0;
+}
+
+.Titulo{
+    text-align: center;
+    padding: 20px; 
+}
+.Titulo h1{
+    font-size: 4rem;
+    color: var(--main-color);
+    font-family: "Radio Canada Big", sans-serif;
+}
+.Titulo2{
+  text-align: center;
+  padding: 20px; 
+}
+.Titulo2 h1{
+  font-size: 4rem;
+  color: var(--main-color2);
+  font-family: "Radio Canada Big", sans-serif;
+}
+.I-tabla{
+  min-height: 100vh;
+  align-items: center;
+  position: relative;
+  right: -150px;
+  top: 30px;
+}
+.I-tabla td{
+  border-bottom: solid 2px #381311;
+}
+
+table{
+  font-size: 1em;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+th{
+  padding: 20px 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+td{
+  padding: 20px;
+}
+tbody .t1{
+  background: #a3a3a3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .final {
     max-width: 1200px;
@@ -808,18 +909,18 @@ svg path:hover {
   margin-top: 90px;
 }
 .N-inicio {
-  min-height:  50vh;
+  min-height:  100vh;
   align-items: center;
   background-size: cover;
   background-position: center;
   padding-top: 80px;
   display: inline-block;
-  background: url(Imagenes/grano.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   align-items: center;
   width: 100%;
+  background: #f4d69a; 
+
+  
+  
 }
 .N-inicio2{
  
@@ -832,53 +933,63 @@ svg path:hover {
 }
 .N-inicio .row {
   align-items: center;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 50px;
+  white-space: initial;
+  font-size: 1.2em;
 }
-.col .bt{
-  font-size: 2em;
-  display: inline-block;
-  color: #381311;
-  
-}
-.col {
-  width: 900px;
-  height: 250px; 
-  border-radius: 30px;
-  padding: 30px 20px;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin: 100px 500px;
-  background-position: center;
-  backdrop-filter: blur(0.2rem);
-  background-color: #fefefea7;
-  background-size: cover;
-  transition: transform 0.5s;
- 
-}
-.col h1 {
-  background-position: center;
-  flex-basis: 50%;
-  display: inline-block;
-  margin-left: 10px;
+.todo-m{
+  position: relative;
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  
+}
+.todo-m .Mi{
+  width: 50%;
+  height: 700px;
+  transition: 0.5s;
+}
+.Md .cuadro-m1:hover{
+  background-color: #00c3ff;
+}
+.Md .cuadro-m:hover{
+  background-color: #00c3ff;
+}
+.todo-m .Md{
+  width: 45%;
+}
+.Md .cuadro-m1{
+  border: solid 2px #000;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 40px;
+  text-align: justify;
   
 }
-.col p {
-  background-position: center;
-  margin-left: 10%;
-  align-items: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
-}
+.Md  h1{
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
 
-.col:hover{
-  transform: translateY(-10px);
-  
+}
+.Md .cuadro-m{
+  border: solid 2px #1b1b1b;
+  padding: 10px;
+  margin: 40px;
+  border-radius: 15px;
+  text-align: justify;
+}
+.N-inicio .Mi img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .N-inicio2 .content{
-  display: flex;
-  height: 90%;
-  
+  min-height: 100%;
+
 }
 .N-inicio2 .historia {
   flex-basis: 50%;
@@ -886,12 +997,7 @@ svg path:hover {
   padding: 10px 15px;
   align-items: center;
   background-position: center;
-}
-
-.N-inicio2 .historia h1{
-  color: #000;
-  font-size: 50px;
-  z-index: 1;
+  padding: 50px;
 }
 .N-inicio2 .historia p{
   color: #000;
@@ -900,18 +1006,29 @@ svg path:hover {
   z-index: 1;
   font-weight: 300;
 }
-.hi video {
-  margin: auto;
-  width: auto;
-  height: 620px;
-  border-radius: 6%;
+.hi{
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
 }
+.hi img{
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top bottom;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+
 .N-cont {
   background: url(Imagenes/todo.jpg);
   display: flex;
   align-items: center;
   justify-content: center;
-  
 
 }
 .redes {
@@ -1031,7 +1148,7 @@ svg path:hover {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-  background-color: #1f0000;
+  background-color: #3f0100;
 }
 .text-blk {
   margin-top: 0px;
@@ -1119,7 +1236,7 @@ svg path:hover {
 .name {
   font-size: 25px;
   font-weight: 700;
-  color: rgb(102, 102, 102);
+  color: #9e766f;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 5px;
@@ -1129,7 +1246,7 @@ svg path:hover {
 .position {
   font-size: 25px;
   font-weight: 700;
-  color: rgb(0, 135, 177);
+  color: #e1c49f;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 50px;
