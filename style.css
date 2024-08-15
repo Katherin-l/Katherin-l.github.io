@@ -24,9 +24,11 @@ html{
   --main-color2:#f0bd6e;
   --second-color: #1e3932;
 }
-
+.todo{
+  background: url(Imagenes/fondo.jpg);
+  width: 100%;
+}
 nav{
-  background: #017143;
   height: 100px;
   width: 100%;
 
@@ -113,8 +115,7 @@ li a.active, li a:hover{
     min-height:  100vh;
     display: flex;
     align-items: center;
-    background: url(Imagenes/fondo.jpg) no-repeat ;
-    
+    /* background: url(Imagenes/fondo.jpg) no-repeat ; */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -700,12 +701,13 @@ tbody .t1{
 .container {
     display: grid;
     place-items: center;
-    margin-inline: 1.5rem;
-    padding-block: 5rem;
+    padding-bottom: 20px;
+    max-height: 90vh;
   }
   .product {
     background: url(Imagenes/lineas.jpg);
-    
+    width: 100%;
+    min-height: 100vh;
   }
   .card__container {
     display: grid;
@@ -718,7 +720,7 @@ tbody .t1{
   }
   
   .card__img {
-    width: 328px;
+    width: 308px;
     border-radius: 1.5rem;
   }
   
@@ -853,11 +855,11 @@ tbody .t1{
       grid-template-columns: repeat(5, 1fr);
     }
     .card__img {
-      width: 348px;
+      width: 250px;
     }
     .card__data {
-      width: 316px;
-      padding-inline: 2.5rem;
+      width: 190px;
+      padding-inline: 2.0rem;
     }
   }
 .unico  {
@@ -948,6 +950,94 @@ tbody .t1{
   height: 100%;
   background: #017143;
   clip-path: circle(600px at right 800px);
+}
+.caja-barra{
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  height: 400px;
+ 
+}
+.barra{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: 10px;
+  width: 90%;
+  padding: 40px 90px;
+  border-radius: 10px;
+  margin: 0px 30px;
+  
+}
+.barra .progress-box{
+  width: 100%;
+  margin: 20px 0;
+  height: 60px;
+}
+.progress-box .title{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #181433;
+
+}
+.progress-box .progress-bg{
+  height: 20px;
+  width: 100%;
+  background-color: #d3d3d3;
+  border-radius: 6px;
+}
+.progress-bar{
+  opacity: 0;
+  animation: progress 2s ease-in-out forwards;
+}
+@keyframes progress {
+  0%{
+    width: 0;
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.html-bg{
+  background-color: #F7D526;
+  height: 20px;
+  width: 80%;
+  border-radius: 6px;
+  animation-delay: 0.1s;
+}
+.css-bg{
+  background-color: #00c3ff;
+  height: 20px;
+  width: 65%;
+  border-radius: 6px;
+  animation-delay: 0.2s;
+}
+.java-bg{
+  background-color: #017143;
+  height: 20px;
+  width: 50%;
+  border-radius: 6px;
+  animation-delay: 0.3s;
+}
+.php-bg{
+  background-color: red;
+  height: 20px;
+  width: 90%;
+  border-radius: 6px;
+  animation-delay: 0.4s;
+}
+.title{
+  flex-basis: 50%;
+  display: flex;
+}
+.item-value{
+ flex-basis: 50%;
+ text-align: right;
+ font-size: 16px;
+ 
 }
 /* NOSOTROS */
 .estatico{
@@ -1125,7 +1215,7 @@ min-height: 100vh;
   list-style: none;
   height: 100%;
   width: 100%;
-  padding-top: 90px;
+  padding-top: 20px;
   font-family: "Poppins", sans-serif;
   justify-content: center;
   margin-bottom: 2%;
@@ -1245,20 +1335,16 @@ min-height: 100vh;
   margin-left: 0px;
   line-height: 25px;
 }
-
 .responsive-cell-block {
   min-height: 75px;
 }
-
 .responsive-container-block {
   min-height: 75px;
   height: fit-content;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0px;
   margin-right: auto;
-  margin-bottom: 0px;
   margin-left: auto;
   justify-content: space-evenly;
 }
@@ -1673,6 +1759,7 @@ body {
   font-size: 40px;
   margin-bottom: 5px;
   text-align: center;
+  margin-left: 80px;
   
 }
 .contact-left-title hr{
@@ -1916,9 +2003,11 @@ body {
   max-width: 100vh;
   background-repeat: no-repeat;
 }
-/* S-E-R-V-I-C-I-O */
 }
-.servicio-I  {
+
+/* S-E-R-V-I-C-I-O */
+
+.servicio-I{
   position: relative;
   width: 100%;
   max-height: 100vh;
@@ -1935,6 +2024,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-height: 100vh;
 }
 .se-inicio .textbox{
   position: relative;
@@ -2001,25 +2091,18 @@ body {
   text-decoration: none;
 }
 .se-inicio .videobox {
-  width: 800px;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   padding-right: 50px;
   margin-top: 50px;
 }
 .se-inicio .videobox-1 {
-  width: 800px;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   padding-right: 50px;
   margin-top: 50px;
-}
-.se-inicio .videobox video {
-  max-width: 350px;
-  clip-path: circle(700px at right 500px);
-}
-.se-inicio .videobox-1 video {
-  max-width: 350px;
 }
 .esfera {
   position: absolute;
@@ -2044,14 +2127,15 @@ body {
 
 /* C-A-L-I-D-A-D */
 .I-calidad{
+  bottom: 60px;
   position: relative;
   width: 100%;
   padding: 100px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .I-calidad .sec1 h2{
+  align-items: center;
   text-align: center;
   color: #333;
   font-size: 4em;
@@ -2059,7 +2143,7 @@ body {
   font-weight: 500;
 }
 .I-calidad .sec1{
-  margin: 0%;
+  bottom: 80px;
 }
 .I-calidad .sec1 h2 span{
   color: #017143;
@@ -2072,49 +2156,17 @@ body {
     text-align: center;
     text-align: justify;
 }
-.carrusel{
+.galeria{
+  margin-top: 6%;
+  width: 100%;
   align-items: center;
-  margin: 40px 35%;
-  margin-top: 0;
-
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
 }
-.carrusel img {
-  object-fit: scale-down;
-  align-items: center;
-
-}
-.carrusel-img{
-  width: 350px;
-  height: 350px;
-  overflow: hidden;  /* las imágenes no van a salir del márgen de la pantalla*/
-  
-}
-.carrusel-img figure img {
-   width: 20%;
-   float: left; 
-   
-  }
-
-.carrusel-img figure { 
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 15s slidy infinite; /*el movimiento se va a mantener de forma indefinida -infinito-*/
-}
-
-
-/*esta parte del código define el movimiento de las imágenes a la izquierda*/
-@keyframes slidy {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
+.galeria img {
+  max-width: 200px;
+  max-height: 250px;
+  border-radius: 5px;
 }

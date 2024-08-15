@@ -47,7 +47,8 @@ const header = document.querySelector("header");
 const footer = document.querySelector("footer");
 
 header.innerHTML= `
- <nav>
+<section class="todo">
+<nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fa-solid fa-bars"></i>
@@ -57,7 +58,7 @@ header.innerHTML= `
             </a>
             <ul>
                 <li>
-                    <a href="index.html" class=" active">Home</a>
+                    <a href="index.html" class=" active">Inicio</a>
                 </li>
                 <li>
                     <a href="nosotros.html" class="btns">Nosotros</a>
@@ -76,6 +77,17 @@ header.innerHTML= `
                 </li>
             </ul>
         </nav>
+          <section class="inicio" id="inicio">
+    <div class="content">
+        <h2>Its not just coffe<br>Its<span>CAC BAGUA GRANDE</span></h2>
+      
+         <div class="boton">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Mas información</a>
+        </div>
+    </div>
+</section>
+</section>
      
       
 `;
