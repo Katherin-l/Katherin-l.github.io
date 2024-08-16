@@ -135,49 +135,7 @@ footer.innerHTML= `
 `;
 
 // NUESTRO EQUIPO
-var swiper = new Swiper(".team-swiper", {
-    navigation: {
-      nextEl: ".swiper-button-nexts",
-      prevEl: ".swiper-button-prevs",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    // Responsive breakpoints
-    breakpoints: {
-      250: {
-        slidesPerView: 1.2,
-        spaceBetween: 80
-      },
-      // when window width is &gt;= 320px
-      300: {
-        slidesPerView: 1.2,
-        spaceBetween: 0
-      },
-      // when window width is &gt;= 480px
-      400: {
-        slidesPerView: 1.5,
-        spaceBetween: 20
-      },
-      // when window width is &gt;= 640px
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      },
-      840: {
-        slidesPerView: 3,
-        spaceBetween: 40
-      },
-      1150: {
-        slidesPerView: 4,
-        spaceBetween: 40
-      }
-    }
-  });
+
 
   function imgSlider(anything){
     document.querySelector('.starbucks').src = anything;
@@ -187,5 +145,16 @@ var swiper = new Swiper(".team-swiper", {
     circle.style.background = color;
  }
 
+ let next = document.querySelector('.next')
+ let prev = document.querySelector('.prev')
  
+ next.addEventListener('click', function(){
+     let items = document.querySelectorAll('.item')
+     document.querySelector('.slide').appendChild(items[0])
+ })
+ 
+ prev.addEventListener('click', function(){
+     let items = document.querySelectorAll('.item')
+     document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+ })
 
