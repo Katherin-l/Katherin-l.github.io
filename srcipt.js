@@ -48,47 +48,45 @@ const footer = document.querySelector("footer");
 
 header.innerHTML= `
 <section class="todo">
-<nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <a href="#" class="enlace">
-                <img src="Imagenes/logo.png" width="auto" height="100px">
-            </a>
-            <ul>
-                <li>
-                    <a href="index.html" class=" active">Inicio</a>
-                </li>
-                <li>
-                    <a href="nosotros.html" class="btns">Nosotros</a>
-                </li>
-                <li>
-                    <a href="producto.html" class="btns">Productos</a>
-                </li>
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="calidad.html">Calidad</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-          <section class="inicio" id="inicio">
-    <div class="content">
-        <h2>Its not just coffe<br>Its<span>CAC BAGUA GRANDE</span></h2>
-      
-         <div class="boton">
-            <a href="nosotros.html">Nosotros</a>
-            <a href="contacto.html">Mas información</a>
-        </div>
-    </div>
-</section>
-</section>
-     
+            <nav>
+                        <input type="checkbox" id="check">
+                        <label for="check">
+                            <i class="fas fa-bars" id="btn"></i>
+                            <i class="fas fa-times" id="cancel"></i>
+                        </label>
+                            <img src="Imagenes/logo.png">
+                        <ul>
+                            <li>
+                                <a href="index.html" class=" active">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="nosotros.html" class="btns">Nosotros</a>
+                            </li>
+                            <li>
+                                <a href="producto.html" class="btns">Productos</a>
+                            </li>
+                            <li>
+                                <a href="servicios.html">Servicios</a>
+                            </li>
+                            <li>
+                                <a href="calidad.html">Calidad</a>
+                            </li>
+                            <li>
+                                <a href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                      <section class="inicio" id="inicio">
+                <div class="content">
+                    <h2>Its not just coffe<br>Its<span>CAC BAGUA GRANDE</span></h2>
+                  
+                     <div class="boton">
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="contacto.html">Mas información</a>
+                    </div>
+                </div>
+            </section>
+            </section>
       
 `;
 footer.innerHTML= `
@@ -134,7 +132,7 @@ footer.innerHTML= `
         </div>
 `;
 
-// NUESTRO EQUIPO
+
 
 
   function imgSlider(anything){
