@@ -46,56 +46,42 @@ window.addEventListener("scroll", () => {
 const header = document.querySelector("header");
 const footer = document.querySelector("footer");
 
-header.innerHTML= `
-<section class="todo">
-            <nav>
-                        <input type="checkbox" id="check">
-                        <label for="check">
-                            <i class="fas fa-bars" id="btn"></i>
-                            <i class="fas fa-times" id="cancel"></i>
-                        </label>
-                            <img src="Imagenes/logo.png">
-                        <ul>
-                            <li>
-                                <a href="index.html" class=" active">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="nosotros.html" class="btns">Nosotros</a>
-                            </li>
-                            <li>
-                                <a href="producto.html" class="btns">Productos</a>
-                            </li>
-                            <li>
-                                <a href="servicios.html">Servicios</a>
-                            </li>
-                            <li>
-                                <a href="calidad.html">Calidad</a>
-                            </li>
-                            <li>
-                                <a href="contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </nav>
-                      <section class="inicio" id="inicio">
-                <div class="content">
-                    <h2>Its not just coffe<br>Its<span>CAC BAGUA GRANDE</span></h2>
-                  
-                     <div class="boton">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="contacto.html">Mas información</a>
-                    </div>
+ header.innerHTML= `
+ <div class="banner">
+            <input type="checkbox" id="check">
+                            <label for="check">
+                                <i class="fas fa-bars" id="btn"></i>
+                                <i class="fas fa-times" id="cancel"></i>
+                            </label>
+            <video autoplay loop muted plays-inline>
+                <source src="video/principal.mp4" type="video/mp4">
+            </video>
+            <div class="navbar">
+                <img class="logo" src="Imagenes/logo.png">
+                <ul>
+                    <li><a href="index.html" class=" active">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="producto.html">Productos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="calidad.html">Calidad</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="content-i">
+                <h1>CAC BAGUA GRANDE</h1>
+                <div>
+                    <button type="button">Explorar</button>
                 </div>
-            </section>
-            </section>
-      
-`;
+            </div>
+        </div>    
+ `;
 footer.innerHTML= `
 <div class="final">
             <div class="footer-row">
                 <div class="footer-links">
                     <h4>Nosotros</h4>
                     <ul>
-                        <li><a href="#">Misión y Visión</a></li>
+                        <li><a href="nosotros.html">Misión y Visión</a></li>
                         <li><a href="#">Nuestro Historia</a></li>
                         <li><a href="#">Nuestro Equipo</a></li>
                         
@@ -104,19 +90,19 @@ footer.innerHTML= `
                 <div class="footer-links">
                     <h4>Ayuda</h4>
                     <ul>
+                        <li><a href="#">Registro</a></li>
+                        <li><a href="#">Contacto</a></li>
                         <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Nuestro Servicios</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Nosotros</a></li>
+                        
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Tienda</h4>
                     <ul>
-                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Productos</a></li>
                         <li><a href="#">Nuestro Servicios</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Calidad</a></li>
+                        
                     </ul>
                 </div>
                 <div class="footer-links">
