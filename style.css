@@ -319,6 +319,7 @@ label #cancel{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: url(Imagenes/todo.jpg);
   
 }
 .presentacion .img-pr{
