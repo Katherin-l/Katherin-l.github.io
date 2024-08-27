@@ -47,7 +47,7 @@ const header = document.querySelector("header");
 const footer = document.querySelector("footer");
 
  header.innerHTML= `
- <div class="banner">
+  <div class="banner">
             <input type="checkbox" id="check">
                             <label for="check">
                                 <i class="fas fa-bars" id="btn"></i>
@@ -70,7 +70,7 @@ const footer = document.querySelector("footer");
             <div class="content-i">
                 <h1>CAC BAGUA GRANDE</h1>
                 <div>
-                    <button type="button">Explorar</button>
+                    <a href="#cert"><button type="button">Explorar</button></a>
                 </div>
             </div>
         </div>    
@@ -141,4 +141,13 @@ footer.innerHTML= `
      let items = document.querySelectorAll('.item')
      document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
  })
+
+
+ //BARRA
+ const spans = document.querySelectorAll('.progress-bar span');
+
+ spans.forEach((span) => {
+    span.style.width = span.dataset.width;
+    span.innerHTML = span.dataset.width;
+ });
 

@@ -87,9 +87,13 @@ button{
   font-size: 20px;
   cursor: pointer;
   font-weight: 600;
+  text-decoration: none;
+}
+.button a{
+  text-decoration: none;
 }
 button:hover{
-  background: rgb(0, 192, 226);
+  background:#84b975;
   transition: 0.5s;
 }
 button:hover{
@@ -100,11 +104,13 @@ button:hover{
   right: 0;
   bottom: 0;
   z-index: -1;
+  height: 100%;
 }
 @media(min-aspect-ratio: 16/5){
   .banner video{
       width: 100%;
       height: auto;
+      
   }
 }
 label #btn,
@@ -863,94 +869,7 @@ tbody .t1{
   background: #017143;
   clip-path: circle(600px at right 800px);
 }
-.caja-barra{
-  align-items: center;
-  justify-content: center;
-  padding-top: 50px;
-  height: 400px;
- 
-}
-.barra{
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  height: 10px;
-  width: 90%;
-  padding: 40px 90px;
-  border-radius: 10px;
-  margin: 0px 30px;
-  
-}
-.barra .progress-box{
-  width: 100%;
-  margin: 20px 0;
-  height: 60px;
-}
-.progress-box .title{
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 600;
-  color: #181433;
 
-}
-.progress-box .progress-bg{
-  height: 20px;
-  width: 100%;
-  background-color: #d3d3d3;
-  border-radius: 6px;
-}
-.progress-bar{
-  opacity: 0;
-  animation: progress 2s ease-in-out forwards;
-}
-@keyframes progress {
-  0%{
-    width: 0;
-    opacity: 1;
-  }
-  100%{
-    opacity: 1;
-  }
-}
-.html-bg{
-  background-color: #F7D526;
-  height: 20px;
-  width: 80%;
-  border-radius: 6px;
-  animation-delay: 0.1s;
-}
-.css-bg{
-  background-color: #00c3ff;
-  height: 20px;
-  width: 65%;
-  border-radius: 6px;
-  animation-delay: 0.2s;
-}
-.java-bg{
-  background-color: #017143;
-  height: 20px;
-  width: 50%;
-  border-radius: 6px;
-  animation-delay: 0.3s;
-}
-.php-bg{
-  background-color: red;
-  height: 20px;
-  width: 90%;
-  border-radius: 6px;
-  animation-delay: 0.4s;
-}
-.title{
-  flex-basis: 50%;
-  display: flex;
-}
-.item-value{
- flex-basis: 50%;
- text-align: right;
- font-size: 16px;
- 
-}
 .ultimo-p{
   position: relative;
   width: 100%;
@@ -1076,6 +995,47 @@ tbody .t1{
 .button button:hover{
   background: #ababab;
   color: #fff;
+}
+.cnta{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.cnta .progress-cnta{
+  margin-bottom: 25px;
+}
+.cnta .progress-cnta h4{
+  margin: 0 0 15px 15px;
+  letter-spacing: .5px;
+}
+.cnta .progress-cnta .progress-bar{
+  position: relative;
+  width: 1150px;
+  height: 80px;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 3px 4px 5px 0px rgba(204 185 185 / .75);
+}
+.cnta .progress-cnta .progress-bar span{
+  position: absolute;
+  padding: 25px;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+  border-radius: 30px;
+  background: linear-gradient(90deg, rgba(76,175,80,1) 50%,rgba(50,222,132,1)100%);
+  transition: width .5s linear;
 }
 /* NOSOTROS */
 .estatico{
@@ -1231,7 +1191,7 @@ tbody .t1{
 .N-inicio2 .historia {
   flex-basis: 50%;
   margin-left: 10px;
-  padding: 20px 20px;
+  padding: 40px 50px;
   align-items: center;
   background-position: center;
   padding: 50px;
@@ -1240,7 +1200,9 @@ tbody .t1{
   color: #000;
   font-size: 1.2em;
   line-height: 33px;
- 
+  text-align: justify;
+  padding:  10px 100px;
+  
 }
 .hi{
   width: 100%;
