@@ -777,7 +777,7 @@ tbody .t1{
 
 /* PRODUCTO */
   .product {
-    background: url(Imagenes/blog-pattern-bg.png);
+    background: url(Imagenes/todo.jpg);
     width: 100%;
     height: auto;
   } 
@@ -935,8 +935,17 @@ tbody .t1{
   display: block;
 }
 
-
+.item .content{
+  border: 3px solid #fafafa10;
+  background: #fafafa10;
+  border-radius: 1rem;
+  backdrop-filter: blur(0.4rem);
+  margin: 0 auto;
+  padding: 15px;
+}
 .content .name{
+  text-align: center;
+  align-items: center;
   font-size: 40px;
   text-transform: uppercase;
   font-weight: bold;
@@ -945,6 +954,7 @@ tbody .t1{
 }
 
 .content .des{
+  align-items: center;
   margin-top: 10px;
   margin-bottom: 20px;
   opacity: 0;
@@ -991,6 +1001,8 @@ tbody .t1{
   cursor: pointer;
   margin: 0 5px;
   transition: 0.3s;
+  align-items: center;
+  
 }
 
 .button button:hover{
@@ -999,7 +1011,7 @@ tbody .t1{
 }
 .cnta{
   width: 100%;
-  height: 40vh;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1017,7 +1029,7 @@ tbody .t1{
 .cnta .progress-cnta .progress-bar{
   position: relative;
   width: 1150px;
-  height: 80px;
+  height: 70px;
   border-radius: 30px;
   background-color: white;
   box-shadow: 3px 4px 5px 0px rgba(204 185 185 / .75);
@@ -1036,8 +1048,16 @@ tbody .t1{
   text-align: center;
   border-radius: 30px;
   background: linear-gradient(90deg, rgba(76,175,80,1) 50%,rgba(50,222,132,1)100%);
-  transition: width .5s linear;
+  transition: width .7s linear;
+ 
 }
+.cnta .progress-cnta .progress-bar span::before{
+  content: attr(data-label);
+ align-items: center;
+ padding-right: 15px;
+}
+
+
 /* NOSOTROS */
 .estatico{
   min-height: 60vh;
