@@ -23,6 +23,21 @@ html{
   --main-color2:#f0bd6e;
   --second-color: #1e3932;
 }
+
+.flags{
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flags_item{
+  width: 30px;
+}
+.flags_img{
+  display: block;
+  cursor: pointer;
+}
+
 .banner{
   width: 100%;
   height: 100vh;
@@ -37,6 +52,7 @@ html{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 .logo{
   width: 160px;
@@ -69,12 +85,13 @@ li a:hover{
   color: white;
   top: 45%;
   transform: translateY(-50%);
-  text-align: center;
+ 
 }
 .content-i h1{
   margin-top: 80px;
   font-size: 90px;
   font-weight: 800;
+  text-align: start;
 }
 button{
   width: 200px;
@@ -319,7 +336,9 @@ label #cancel{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url(Imagenes/todo.jpg);
+  background: url(Imagenes/blog-pattern-bg.png);
+  background-repeat: no-repeat;
+    
   
 }
 .presentacion .img-pr{
@@ -343,7 +362,8 @@ label #cancel{
   top: 35%;
   font-size: 1.2em;
   color: #fff;
-  padding-left: 10px;
+  padding-left: 20px;
+  text-align: center;
   
   
 }
@@ -352,23 +372,25 @@ label #cancel{
   top: 85%;
   font-size: 1.2em;
   color: #fff;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 .img-pr .p2{
   position: absolute;
-  top: 35%;
+  top: 33%;
   font-size: 1.2em;
   color: #fff;
-  right: 120px;
-  text-align: end;
+  right: 130px;
+  text-align: justify;
   align-items: center;
 }
 .img-pr .p3{
   position: absolute;
-  top: 85%;
+  top: 83%;
   font-size: 1.2em;
   color: #fff;
-  right: 150px;
+  right: 120px;
+  text-align: justify;
+  align-items: center;
 }
 
 .presentacion .sec1{
@@ -1923,6 +1945,68 @@ min-height: 100vh;
   justify-content: flex-start;
 }
 
+.desplegable{
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: calc(50vh - 25px)auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 0px;
+  transition: all 500ms ease;
+}
+.desplegable:hover{
+  margin: calc(50vh - 225px) auto;
+  grid-template-rows: 50px 400px;
+}
+input[type="radio"]{display: none;}
+.radio{
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(1fr,1fr));
+  grid-gap: 20px;
+}
+label{
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 0px 0px rgba(3,156,225,.1),
+   0px 0px 5px 5px rgba(193,193,293,.15);
+  padding: 10px;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+  overflow: hidden;
+}
+h1 ,h2 , p{
+  font-family: arial;
+  font-weight: 100;
+  text-align: center;
+  text-transform: capitalize;
+
+}
+h2{
+  font-size: 20px; margin-top: 10px; 
+}
+p{font-size: 14px; color: #c1c1c1; margin-bottom: 10px;}
+p:nth-child(2){
+  color: #02194f;
+}
+.title > h1{
+  width: 100%;
+  color: white;
+  line-height: 50px;
+  font-size: 25px;
+  background: #02194f;
+  letter-spacing: 2px;
+}
+input[type="radio"]:checked + label{
+  border: 1px solid #039cfc;
+  box-shadow: inset 0px 0px 0px 100px rgba(3,156,225,.1),
+   0px 0px 5px 5px rgba(193,193,293,.15);
+}
 
 /* C-A-L-I-D-A-D */
 .N-calidad{

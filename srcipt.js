@@ -49,9 +49,9 @@ const footer = document.querySelector("footer");
  header.innerHTML= `
   <div class="banner">
             <input type="checkbox" id="check">
-                            <label for="check">
-                                <i class="fas fa-bars" id="btn"></i>
-                                <i class="fas fa-times" id="cancel"></i>
+            <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
                             </label>
             <video autoplay loop muted plays-inline>
                 <source src="video/principal.mp4" type="video/mp4">
@@ -65,6 +65,7 @@ const footer = document.querySelector("footer");
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="calidad.html">Calidad</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
+                    
                 </ul>
             </div>
             <div class="content-i">
