@@ -2029,10 +2029,14 @@ min-height: 100vh;
   }
 }
 .acordion{
-  margin: 20px auto;
-  width: 250px;
+  margin: 5px;
+  width: 400px;
   
  
+}
+.a-acordion{
+  display: flex;
+
 }
 .acordion li{
   list-style: none;
