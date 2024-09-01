@@ -49,10 +49,7 @@ const footer = document.querySelector("footer");
  header.innerHTML= `
   <div class="banner">
             <input type="checkbox" id="check">
-            <label for="check">
-            <i class="fas fa-bars" id="btn"></i>
-            <i class="fas fa-times" id="cancel"></i>
-                            </label>
+            
             <video autoplay loop muted plays-inline>
                 <source src="video/principal.mp4" type="video/mp4">
             </video>
@@ -152,3 +149,5 @@ footer.innerHTML= `
     span.innerHTML = span.dataset.width;
  });
 
+
+ 
