@@ -77,6 +77,15 @@ li a:hover{
   font-size: 90px;
   font-weight: 800;
   text-align: start;
+  color: #017143;
+  
+}
+.content-i h1 span{
+  margin-top: 80px;
+  font-size: 90px;
+  font-weight: 800;
+  text-align: start;
+  color: #fff;
   
 }
 button{
@@ -109,7 +118,7 @@ button:hover{
   z-index: -1;
   height: 100%;
 }
-@media(min-aspect-ratio: 1/9){
+@media(min-aspect-ratio: 16/9){
   .banner video{
       width: 100%;
       height: auto;
@@ -328,12 +337,14 @@ label #cancel{
   background-repeat: no-repeat;
 }
 .presentacion .img-pr{
+  width: 100%;
   align-items: center;
   margin-left: 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 180px);
   grid-gap: 180px;
+
   
 }
 .presentacion .img-pr img {
@@ -341,7 +352,18 @@ label #cancel{
   max-height: 350px;
   border-radius: 5px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  
 }
+.presentacion .img-pr img:hover{
+
+  
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+  
+}
+
 .img-pr p{
   display: flex;
   position: absolute;
@@ -878,7 +900,9 @@ tbody .t1{
   background: #017143;
   clip-path: circle(600px at right 800px);
 }
-
+.prodcuto-final{
+  width: 100%;
+}
 .ultimo-p{
   position: relative;
   width: 100%;
@@ -1102,6 +1126,7 @@ tbody .t1{
   display: flex;
   align-items: center;
   background-position: center;
+  
 }
 .N-inicio .row {
   right: -80px;
@@ -2111,6 +2136,8 @@ input[type="radio"]{
   overflow: hidden;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
   width: 500px;
+  border-radius: 15px;
+  
   
 }
 .panel i{
