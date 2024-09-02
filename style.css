@@ -68,8 +68,9 @@ li a:hover{
   width: 100%;
   position: absolute;
   color: white;
-  top: 60%;
-  transform: translateY(-50%);
+  top: 40%;
+  
+  
  
 }
 .content-i h1{
@@ -78,6 +79,7 @@ li a:hover{
   font-weight: 800;
   text-align: start;
   color: #017143;
+  padding-left: 30px;
   
 }
 .content-i h1 span{
@@ -100,6 +102,7 @@ button{
   cursor: pointer;
   font-weight: 600;
   text-decoration: none;
+  
 }
 .button a{
   text-decoration: none;
@@ -806,15 +809,11 @@ tbody .t1{
 
 
 /* PRODUCTO */
-  .product {
-    background: url(Imagenes/todo.jpg);
-    width: 100%;
-    height: auto;
-  } 
+
 .unico  {
   position: relative;
   width: 100%;
-  max-height: 100vh;
+  min-height: 100vh;
   padding: 100px;
   display: flex;
   justify-content: space-between;
@@ -866,31 +865,7 @@ tbody .t1{
   padding-right: 50px;
   margin-top: 50px;
 }
-.P-inicio .imgbox img {
-  max-width: 340px;
-}
-.thumb 
-{
-  position: absolute;
-  left: 50%;
-  bottom: 40px;
-  transform: translateX(-50%);
-  display: flex;
-}
-.thumb li 
-{
-  list-style: none;
-  display: inline-block;
-  margin:  0 20px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-.thumb li:hover {
-  transform: translateY(-15px);
-}
-.thumb li img {
-  max-width: 60px;
-}
+
 .circle {
   position: absolute;
   top: 0;
@@ -1041,54 +1016,6 @@ tbody .t1{
   background: #ababab;
   color: #fff;
 }
-.cnta{
-  width: 100%;
-  height: 20vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  
-}
-
-.cnta .progress-cnta{
-  margin-bottom: 25px;
-}
-.cnta .progress-cnta h4{
-  margin: 0 0 15px 15px;
-  letter-spacing: .5px;
-}
-.cnta .progress-cnta .progress-bar{
-  position: relative;
-  width: 1150px;
-  height: 70px;
-  border-radius: 30px;
-  background-color: white;
-  box-shadow: 3px 4px 5px 0px rgba(204 185 185 / .75);
-}
-.cnta .progress-cnta .progress-bar span{
-  position: absolute;
-  padding: 25px;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  color: white;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.7;
-  text-align: center;
-  border-radius: 30px;
-  background: linear-gradient(90deg, rgba(76,175,80,1) 50%,rgba(50,222,132,1)100%);
-  transition: width .7s linear;
- 
-}
-.cnta .progress-cnta .progress-bar span::before{
-  content: attr(data-label);
- align-items: center;
- padding-right: 15px;
-}
-
 
 /* NOSOTROS */
 .estatico{
@@ -1973,9 +1900,8 @@ min-height: 100vh;
   padding-right: 100px;
 }
 .inf-calidad{
-  
   width: 100%;
-  padding: 100px;
+  padding: 50px 100px;
   justify-content: center;
 }
 .inf-calidad h2{
@@ -1984,24 +1910,24 @@ min-height: 100vh;
   font-size: 3em;
   color: var(--main-color2);
 }
-.contendio-calidad h1{
-  text-align: center;
-  padding-bottom: 45px;
-  font-size: 2em;
-  
-}
+
 .inf-calidad p{
   font-size: 1.2em;
+  text-align: justify;
+}
+.grupo-cert h1{
+  text-align: center;
+  padding-bottom: 5%;
 }
 .img-certificacion{
   width: 100%;
-  min-height: 50vh;
+  min-height: 70vh;
   justify-content: center;
   margin-left: 40px;
   align-items: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 170px);
+  grid-template-rows: repeat(2, 170px);
   grid-gap: 85px;
 }
 .img-certificacion img{
@@ -2053,96 +1979,54 @@ min-height: 100vh;
     width: 100%;
   }
 }
-.acordion{
-  margin: 5px;
-  width: 500px;
- 
+.in-sec{
+  width: 450px;
 }
-.a-acordion{
-  display: flex;
-  
-}
-.acordion li{
-  list-style: none;
-  width: 100%;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 8px;
-  background: #e3edf7;
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-}
-.acordion li label{
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  text-align: center;
-  
-}
-.acordion li label i{
-  margin: 0 10px;
-  color: #5d5d5d;
-  display: flex;
-}
-label::before{
-  content: '+';
-  margin-right: 10px;
-  font-size: 24px;
-  font-weight: 600;
-}
-input[type="radio"]{
-  display: none;
-}
-.acordion .ac-content{
-  color: #555;
-  padding: 0 10px;
-  line-height: 20px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s, padding 0.5s;
-}
-
-.acordion input[type="radio"]:checked + label + .ac-content{
-  max-height: 400px;
-  padding: 10px 10px 20px;
-}
-.acordion input[type="radio"]:checked + label::before{
-  content: '-';
-}
-
-.accordion {
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+.in-sec h1{
+  position: relative;
   color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 500px;
-  border: none;
+  background-color:#eaeaea;
+  border-radius: 10px ;
+  z-index: 99;
   text-align: left;
-  outline: none;
+  padding: 18px;
   font-size: 15px;
-  
-}
-
-.accordion.active, .accordion:hover {
-  background-color: #a9a9a9; 
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-  width: 500px;
-  border-radius: 15px;
-  
-  
+
 }
-.panel i{
+.in-sec h1:hover{
+  background-color: #a9a9a9; 
+  color: #fff;
+}
+.in-sec i{
   color: #555;
+  float: left;
+  margin:0 10px; 
 }
+.containersc{
+  position: relative;
+  background: #e3e3e3;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  transform: translateY(-95%) scaleY(0);
+  transition: 1s;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.in-sec h1:hover ~ .containersc{
+  transform: translateY(0) scaleY(1);
+  
+
+}
+.active{
+  transform: translateY(0) scale(1);
+  
+}
+
+
+
+
+
 
 
 
