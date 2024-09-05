@@ -1871,24 +1871,44 @@ min-height: 100vh;
 .se-inicio .videobox {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding-right: 50px;
   margin-top: 50px;
 }
-.se-inicio .videobox-1 video{
- width: 600px;
+.se-inicio .videobox img{
+ width: 500px;
  overflow: hidden;
  object-fit: fill;
  border-radius: 15px;
- background-size: cover;
- 
+ background-size: cover; 
 }
+.videobox img {
+  transition: transform 0.5s ease;
+}
+
+.videobox img:hover {
+  transform: scale(1.2);
+}
+.se-inicio .videobox-1 img{
+  width: 500px;
+  overflow: hidden;
+  object-fit: fill;
+  border-radius: 15px;
+  background-size: cover; 
+ }
 .se-inicio .videobox-1 {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   padding-right: 50px;
   margin-top: 50px;
+}
+.videobox-1 img {
+  transition: transform 0.5s ease;
+}
+
+.videobox-1 img:hover {
+  transform: scale(1.2);
 }
 .esfera {
   position: absolute;
