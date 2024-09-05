@@ -39,10 +39,23 @@ html{
   justify-content: space-between;
   background-color: #017143;
 }
+.fndo{
+
+  background: #f1f1f1;
+  align-items:center;
+  padding: 12px;
+  border-radius: 50%;
+  
+}
 .logo{
-  width: 120px;
-  margin-top: -10px;
+  width: 150px;
   cursor: pointer;
+  margin-left: 5px;
+  align-items: center;
+  padding-right: 12px;
+  background-size: cover;
+  
+ 
 }
 .navbar ul li{
   list-style: none;
@@ -1885,6 +1898,7 @@ min-height: 100vh;
   height: 100%;
   background: #9c5417;
   clip-path: circle(500px at right 500px); 
+  background-image: url(Imagenes/blog-pattern-bg.png) ;
 }
 .esfera-1 {
   position: absolute;
@@ -1895,6 +1909,7 @@ min-height: 100vh;
   background: #017143;
   clip-path: circle(500px at left 500px);
   justify-content: flex-start;
+  background-image: url(Imagenes/blog-pattern-bg.png);
 }
 
 /* C-A-L-I-D-A-D */

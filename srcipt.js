@@ -54,7 +54,7 @@ const footer = document.querySelector("footer");
                 <source src="video/principal.mp4" type="video/mp4">
             </video>
             <div class="navbar">
-                <img class="logo" src="Imagenes/logo.png">
+                <div class="fndo"><img class="logo" src="Imagenes/logo.png"></div>
                 <ul>
                     <li><a href="index.html" class=" active">Inicio</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
