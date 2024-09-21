@@ -56,19 +56,41 @@ const footer = document.querySelector("footer");
             <div class="navbar">
                 <div class="fndo"><img class="logo" src="Imagenes/logo.png"></div>
                 <ul>
-                    <li><a href="index.html" class=" active">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="producto.html">Productos</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="calidad.html">Calidad</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    
+         
+                    <li><a href="index.html" id="br-1">Inicio</a></li>
+                    <li><a href="nosotros.html" id="br-2">Nosotros</a></li>
+                    <li><a href="producto.html" id="br-3">Productos</a></li>
+                    <li><a href="servicios.html" id="br-4">Servicios</a></li>
+                    <li><a href="calidad.html" id="br-5">Calidad</a></li>
+                    <li><a href="contacto.html" id="br-6">Contacto</a></li>
+                   
                 </ul>
+                <div class="translate">
+            <a href="#" id="idioma" class="idioma">
+                <img src="" alt="Icono bandera">
+                <img src="Imagenes/banderas/bottom.svg" alt="Icono bottom">
+            </a>
+            <ul id="idiomas" class="idiomas">
+                <li class="opcion">
+                    <a href="#">
+                        <img src="Imagenes/banderas/latino.svg" alt="Icono bandera">
+                        <span>LATINO</span>
+                    </a>
+                </li>
+                <li class="opcion">
+                    <a href="#">
+                        <img src="Imagenes/banderas/usa.svg" alt="Icono bandera">
+                        <span>USA</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+              
             </div>
             <div class="content-i">
                 <h1>CAC BAGUA <span>GRANDE</span></h1>
                 <div>
-                    <a href="#cert"><button type="button">Explorar</button></a>
+                    <a href="#cert"><button type="button" id="btn">Explorar</button></a>
                 </div>
             </div>
         </div>    
@@ -77,34 +99,34 @@ footer.innerHTML= `
 <div class="final">
             <div class="footer-row">
                 <div class="footer-links">
-                    <h4>Nosotros</h4>
+                    <h4 id="n1">Nosotros</h4>
                     <ul>
-                        <li><a href="nosotros.html">Misión y Visión</a></li>
-                        <li><a href="#">Nuestro Historia</a></li>
-                        <li><a href="#">Nuestro Equipo</a></li>
+                        <li><a href="nosotros.html" id="sub-n1">Misión y Visión</a></li>
+                        <li><a href="#" id="sub-n2">Nuestro Historia</a></li>
+                        <li><a href="#" id="sub-n3">Nuestro Equipo</a></li>
                         
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Ayuda</h4>
+                    <h4 id="n2">Ayuda</h4>
                     <ul>
-                        <li><a href="#">Registro</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#" id="sub-n4">Registro</a></li>
+                        <li><a href="#" id="sub-n5">Contacto</a></li>
+                        <li><a href="#" id="sub-n6">Nosotros</a></li>
                         
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Tienda</h4>
+                    <h4 id=n3>Tienda</h4>
                     <ul>
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="#">Nuestro Servicios</a></li>
-                        <li><a href="#">Calidad</a></li>
+                        <li><a href="#" id="sub-n7">Productos</a></li>
+                        <li><a href="#" id="sub-n8">Nuestro Servicios</a></li>
+                        <li><a href="#" id="sub-n9">Calidad</a></li>
                         
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Siguenos</h4>
+                    <h4 id="n4">Siguenos</h4>
                     <div class="social-link">
                         <a href=""><i class="fab fa-facebook-f"></i></a>
                         <a href=""><i class="fab fa-instagram"></i></a>
@@ -114,7 +136,223 @@ footer.innerHTML= `
                 </div>
             </div>
         </div>
+                
 `;
+
+
+const idiomaActual = document.getElementById('idioma');
+const listaIdiomas = document.getElementById('idiomas');
+const idiomas = document.getElementsByClassName('opcion');
+
+
+const titulo = document.getElementById('titulo-info');
+const parrafo = document.getElementById('parrafo-info');
+const certif = document.getElementById('titulo-certi');
+const pregunta1 = document.getElementById('titulo-p1');
+const txt1 = document.getElementById('text1');
+const txt2 = document.getElementById('text2');
+const txt3 = document.getElementById('text3');
+const txt4 = document.getElementById('text4');
+const titulo2 = document.getElementById('titulo-p2');
+const conte1 = document.getElementById('contador-1');
+const conte2 = document.getElementById('contador-2');
+const conte3 = document.getElementById('contador-3');
+const conte4 = document.getElementById('contador-4');
+const titulo3 = document.getElementById('titulo-p3');
+const txt5 = document.getElementById('t-1');
+const txt6 = document.getElementById('t-2');
+const txt7 = document.getElementById('t-3');
+const txt8 = document.getElementById('t-4');
+const txt9 = document.getElementById('t-5');
+const txt10 = document.getElementById('t-6');
+const txt11 = document.getElementById('t-7');
+const txt12 = document.getElementById('t-8');
+const txt13 = document.getElementById('sub-1');
+const txt14 = document.getElementById('sub-2');
+const txt15 = document.getElementById('sub-3');
+const txt16 = document.getElementById('sub-4');
+const txt17 = document.getElementById('sub-5');
+const txt18 = document.getElementById('sub-6');
+const txt19 = document.getElementById('sub-7');
+const txt20 = document.getElementById('sub-8');
+const fott = document.getElementById('n1');
+const fott1 = document.getElementById('n2');
+const fott2 = document.getElementById('n3');
+const fott3 = document.getElementById('n4');
+const subfot = document.getElementById('sub-n1');
+const subfot1 = document.getElementById('sub-n2');
+const subfot2 = document.getElementById('sub-n3');
+const subfot3 = document.getElementById('sub-n4');
+const subfot4 = document.getElementById('sub-n5');
+const subfot5 = document.getElementById('sub-n6');
+const subfot6 = document.getElementById('sub-n7');
+const subfot7 = document.getElementById('sub-n8');
+const subfot8 = document.getElementById('sub-n9');
+const boton1 = document.getElementById('btn');
+const barra1 = document.getElementById('br-1');
+const barra2 = document.getElementById('br-2');
+const barra3 = document.getElementById('br-3');
+const barra4 = document.getElementById('br-4');
+const barra5 = document.getElementById('br-5');
+const barra6 = document.getElementById('br-6');
+const titulos = document.getElementById('titulo-info1');
+const parrafos = document.getElementById('parrafo-info1');
+const boton11 = document.getElementById('btn');
+const pregunta2 = document.getElementById('title-p2');
+
+
+
+
+
+idiomaActual.addEventListener('click',()=>{
+   listaIdiomas.classList.toggle('toggle');
+});
+
+const opcionesArray = Array.from(idiomas);
+
+opcionesArray.forEach((opcion)=>{
+    opcion.addEventListener('click',()=>{
+        const idioma = opcion.getElementsByTagName('span')[0].textContent.toLowerCase();
+        establecerIdioma(idioma);
+    });
+      
+})
+
+function establecerIdioma(idioma) {
+    idiomaActual.getElementsByTagName('img')[0].src= `imagenes/banderas/${idioma}.svg`;
+    switch (idioma) {
+        case 'usa':
+            titulo.textContent = 'CapiDeveloper';
+            parrafo.textContent = 'Hello! I am a 23-year-old young person and I am currently studying Information Technology. I am passionate about the world of technology and I love sharing my knowledge with others. To achieve this, I have a YouTube channel where I upload videos every weekend.';
+            certif.textContent = 'Certifications';
+            pregunta1.textContent = '¿What do we offer?';
+            txt1.textContent = 'Direct export';
+            txt2.textContent = 'Trading Service';
+            txt3.textContent = 'Green Coffee Bean Pounding Service';
+            txt4.textContent = 'National and export sales of Roasted and Ground Coffee';
+            titulo2.textContent = 'Our Main Markets';
+            conte1.textContent = 'Partners';
+            conte2.textContent = 'Annual Containers';
+            conte3.textContent = 'Customers';
+            conte4.textContent = 'Supported Families';
+            titulo3.textContent = 'Our Technical Sheet';
+            txt5.textContent = 'Organization Data';
+            txt6.textContent = 'Origin of Coffee';
+            txt7.textContent = 'Own production';
+            txt8.textContent = 'Available Varieties';
+            txt9.textContent = 'Quality in cup';
+            txt10.textContent = 'Organoleptic Profile';
+            txt11.textContent = 'Production Process';
+            txt12.textContent = 'Certifications';
+            txt13.textContent = 'CAC BAGUA GRANDE LTDA RUC: 20170142773 Amazonas Region - Peru';
+            txt14.textContent = 'Peru - Amazon Region';
+            txt15.textContent = 'Our production is 16,500 quintals, 75% Organic + Fair Trade Coffee and 25% Fair Trade Coffee.';
+            txt16.textContent = 'Caturra, Bourbon, Catimor, Typical, Catuaí';
+            txt17.textContent = '82-84 Points';
+            txt18.textContent = 'Notes of Caramel, Molasses, Chocolate, Vanilla with a soft, sweet, short aftertaste, with orange acidity and a medium tense body.';
+            txt19.textContent = 'Washing';
+            txt20.textContent = 'Fair Trade, Organic, C.A.F.E. Practice.';
+            fott.textContent = 'Us';
+            fott1.textContent = 'Aid';
+            fott2.textContent = 'Store';
+            fott3.textContent = 'follow us';
+            subfot.textContent = 'Mission and Vision';
+            subfot1.textContent = 'Our History';
+            subfot2.textContent = 'Our Team';
+            subfot3.textContent = 'Record';
+            subfot4.textContent = 'Contact';
+            subfot5.textContent = 'Us';
+            subfot6.textContent = 'Products';
+            subfot7.textContent = 'Our Services';
+            subfot8.textContent = 'Quality';
+            boton1.textContent = 'explor';
+            barra1.textContent = 'Home';
+            barra2.textContent = 'US';
+            barra3.textContent = 'Products';
+            barra4.textContent = 'Services';
+            barra5.textContent = 'Qualiti';
+            barra6.textContent = 'Contact';
+            titulos.textContent = 'CapiDeveloper';
+            parrafos.textContent = 'I am passionate about the world of technology and I love sharing my knowledge with others. To achieve this, I have a YouTube channel where I upload videos every weekend.';
+            boton11.textContent = 'Explor';
+            pregunta2.textContent = 'Who we are'
+            
+           
+            break;
+
+        case 'latino':
+            titulo.textContent = 'CapiDeveloper';
+            parrafo.textContent = '¡Hola! Soy una persona joven de 23 años y actualmente estoy cursando la carrera de Tecnologías de la Información. Soy apasionado por el mundo de la tecnología y me encanta compartir mis conocimientos con los demás. Para lograr esto, tengo un canal de YouTube donde subo videos cada fin de semana.';
+            certif.textContent= 'Certificaciones';
+            pregunta1.textContent= '¿Que Ofrecemos?';
+            txt1.textContent = 'Exportación directa';
+            txt2.textContent = 'Servicio de Trading';
+            txt3.textContent = 'Servicio de Pilado de Café Verde en Grano';
+            txt4.textContent = 'Venta nacional y de exportación de Café Tostado y Molido';
+            titulo2.textContent = 'Nuestros Principales Mercados';
+            conte1.textContent = 'Socios';
+            conte2.textContent = 'Contenedores Anual';
+            conte3.textContent = 'Clientes';
+            conte4.textContent = 'Familias Apoyadas';
+            titulo3.textContent = 'Nuestra Ficha Tecnica';
+            txt5.textContent = 'Datos de la Organización';
+            txt6.textContent = 'Procedencia del Café';
+            txt7.textContent = 'Producción Propia';
+            txt8.textContent = 'Variedades Disponibles';
+            txt9.textContent = 'Calidad en taza';
+            txt10.textContent = 'Perfil Organoléptico';
+            txt11.textContent = 'Proceso de Producción';
+            txt12.textContent = 'Certificaciones';
+            txt13.textContent = 'CAC BAGUA GRANDE LTDA RUC: 20170142773 Región Amazonas - Perú';
+            txt14.textContent = 'Perú - Región Amazonas';
+            txt15.textContent = 'Nuestra producción es de 16500 quintales, siendo el 75% Orgánico + Café Comercio Justo y 25% Café Comercio Justo.';
+            txt16.textContent = 'Caturra, Bourbon, Catimor, Típica, Catuaí';
+            txt17.textContent = '82-84 Puntos';
+            txt18.textContent = 'Notas a Caramelo, Melaza, Chocolate, Vainilla con un post gusto suave, dulce, corto, con acidez a naranja y un cuerpo medio tenso.';
+            txt19.textContent = 'Lavado';
+            txt20.textContent = 'Comercio Justo, Orgánico, C.A.F.E. Practice.';
+            fott.textContent = 'Nosotros';
+            fott1.textContent = 'Ayuda';
+            fott2.textContent = 'Tienda';
+            fott3.textContent = 'Siguenos';
+            subfot.textContent = 'Misión y Visión';
+            subfot1.textContent = 'Nuestro Historia';
+            subfot2.textContent = 'Nuestro Equipo';
+            subfot3.textContent = 'Registro';
+            subfot4.textContent = 'Contacto';
+            subfot5.textContent = 'Nosotros';
+            subfot6.textContent = 'Productos';
+            subfot7.textContent = 'Nuestro Servicios';
+            subfot8.textContent = 'Calidad';
+            boton1.textContent = 'Explorar';
+            barra1.textContent = 'Inicio';
+            barra2.textContent = 'Nosotros';
+            barra3.textContent = 'Productos';
+            barra4.textContent = 'Servicios';
+            barra5.textContent = 'Calidad';
+            barra6.textContent = 'Contacto';
+            titulos.textContent = 'CapiDeveloper';
+            parrafos.textContent = 'Información. Soy apasionado por el mundo de la tecnología y me encanta compartir mis conocimientos con los demás. Para lograr esto, tengo un canal de YouTube donde subo videos cada fin de semana.';
+            boton11.textContent = 'Explorar';
+            pregunta2.textContent = '¿Quienes somos?'
+                
+                
+            break;
+        default:
+            break;
+    }
+}
+
+document.addEventListener('DOMContentLoaded',()=>{
+    switch (navigator.language) {
+        case 'es':
+            establecerIdioma('latino')
+            break;
+        
+        default:
+            break;
+    }      
+});
 
 
 
@@ -127,21 +365,14 @@ footer.innerHTML= `
  next.addEventListener('click', function(){
      let items = document.querySelectorAll('.item')
      document.querySelector('.slide').appendChild(items[0])
- })
+ });
  
  prev.addEventListener('click', function(){
      let items = document.querySelectorAll('.item')
      document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
- })
-
-
- //BARRA
- const spans = document.querySelectorAll('.progress-bar span');
-
- spans.forEach((span) => {
-    span.style.width = span.dataset.width;
-    span.innerHTML = span.dataset.width;
  });
 
 
- 
+
+
+ //IDIOMA

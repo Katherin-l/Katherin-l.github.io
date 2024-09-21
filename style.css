@@ -67,7 +67,7 @@ html{
   text-transform: uppercase;
   color: white;
   font-weight: 600;
-  padding: 15px;
+  padding: 12px;
 }
 li a:hover{
   background: white;
@@ -204,6 +204,59 @@ label #cancel{
   #check:checked ~ label #cancel{
     display: block;
   }
+}
+
+.idiomas{
+  padding-left: 0;
+  list-style: none;
+  position: absolute;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden; 
+  
+}
+.idioma{
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid rgba(219, 219, 219);
+  position: relative;
+}
+.idioma:hover{
+  background-color: rgba(228, 228, 228, 0.386);
+}
+.translate img{
+  width: 15px;
+  height: 15px;
+}
+.translate{
+  display: grid;
+  justify-content: end;
+  width: 5%;
+  margin: auto;
+}
+.idiomas li{
+  width: 100%;
+}
+.idiomas li a {
+  display: block;
+  padding: 0px;
+  font-size: 10px;
+}
+.idiomas li a:hover{
+  background-color: rgba(219, 219, 219);
+}
+.idiomas li img{
+  border-radius: 50%;
+}
+.toggle{
+  visibility: visible;
+}
+.info{
+  width: 50%;
 }
 /* PRINICIPAL */
 
@@ -392,6 +445,7 @@ label #cancel{
   text-align: center;
   
   
+  
 }
 .img-pr .p1{
   position: absolute;
@@ -408,6 +462,7 @@ label #cancel{
   right: 130px;
   text-align: justify;
   align-items: center;
+  
 }
 .img-pr .p3{
   position: absolute;
