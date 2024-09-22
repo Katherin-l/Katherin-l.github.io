@@ -229,6 +229,33 @@ const des8 = document.getElementById('descripcion8');
 const estaticc3 = document.getElementById('t3');
 const sertitulo = document.getElementById('titulo-ser');
 const sersubtitulo = document.getElementById('subser');
+const des9 = document.getElementById('descripcion9');
+const sersubtitulo2 = document.getElementById('subser-2');
+const sersubtitulo3 = document.getElementById('subser-3');
+const sersubtitulo4 = document.getElementById('subser-4');
+const sersubtitulo5 = document.getElementById('subser-5');
+const serpersona = document.getElementById('persona1');
+const serpersona2 = document.getElementById('persona2');
+const sertitulo2 = document.getElementById('titulo-ser2');
+const sersubtitulo6 = document.getElementById('subser-6');
+const des10 = document.getElementById('descripcion10');
+const sertitulo3 = document.getElementById('titulo-ser3');
+const sersubtitulo7 = document.getElementById('subser-7');
+const sersubtitulo8 = document.getElementById('subser-8');
+const des11 = document.getElementById('descripcion11');
+const sertitulo4 = document.getElementById('titulo-ser4');
+const sersubtitulo9 = document.getElementById('subser-9');
+const sersubtitulo10 = document.getElementById('subser-10');
+const des12 = document.getElementById('descripcion12');
+const estaticc4 = document.getElementById('t4');
+const caltitulo = document.getElementById('titulo-calid');
+const des13 = document.getElementById('descripcion13');
+const caltitulo2 = document.getElementById('titulo-calid2');
+const caltitulo3 = document.getElementById('titulo-calid3');
+const estaticc5 = document.getElementById('t5');
+const contatitulo = document.getElementById('reg');
+const contaboton = document.getElementById('boton-cont');
+
 
 
 
@@ -252,11 +279,11 @@ function establecerIdioma(idioma) {
     switch (idioma) {
         case 'usa':
             certif.textContent = 'Certifications';
-            pregunta1.textContent = '¿What do we offer?';
+            pregunta1.textContent = 'What we offer?';
             txt1.textContent = 'Direct export';
-            txt2.textContent = 'Trading Service';
-            txt3.textContent = 'Green Coffee Bean Pounding Service';
-            txt4.textContent = 'National and export sales of Roasted and Ground Coffee';
+            txt2.textContent = 'Trading Services';
+            txt3.textContent = 'Coffee Milling service';
+            txt4.textContent = 'National sales and export of roasted coffee';
             titulo2.textContent = 'Our Main Markets';
             conte1.textContent = 'Partners';
             conte2.textContent = 'Annual Containers';
