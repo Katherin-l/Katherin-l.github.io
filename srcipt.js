@@ -195,11 +195,40 @@ const barra3 = document.getElementById('br-3');
 const barra4 = document.getElementById('br-4');
 const barra5 = document.getElementById('br-5');
 const barra6 = document.getElementById('br-6');
-const titulos = document.getElementById('titulo-info1');
-const parrafos = document.getElementById('parrafo-info1');
+const estaticc = document.getElementById('t1');
 const boton11 = document.getElementById('btn');
-const pregunta2 = document.getElementById('title-p2');
-
+const titlee = document.getElementById('title-p2');
+const des = document.getElementById('descripcion');
+const mis = document.getElementById('subb-n');
+const vis = document.getElementById('subb-n2');
+const des2 = document.getElementById('descripcion2');
+const des3 = document.getElementById('descripcion3');
+const titlee2 = document.getElementById('title-p3');
+const des4 = document.getElementById('descripcion4');
+const localisar1 = document.getElementById('subb-n3');
+const localisar2 = document.getElementById('subb-n4');
+const localisar3 = document.getElementById('subb-n5');
+const localisar4 = document.getElementById('subn6');
+const localisar5 = document.getElementById('subn7');
+const localisar6 = document.getElementById('subb-n6');
+const localisar7 = document.getElementById('subb-n7');
+const localisar8 = document.getElementById('subn8');
+const localisar9 = document.getElementById('subn9');
+const estaticc2 = document.getElementById('t2');
+const titlee3 = document.getElementById('titulo-pr');
+const subtitle4 = document.getElementById('sub-pr2');
+const deslisar = document.getElementById('boton-des');
+const protitulo = document.getElementById('title-pro');
+const protitulo1 = document.getElementById('title-pro2');
+const protitulo2 = document.getElementById('title-pro3');
+const protitulo3 = document.getElementById('title-pro4');
+const des5 = document.getElementById('descripcion5');
+const des6 = document.getElementById('descripcion6');
+const des7 = document.getElementById('descripcion7');
+const des8 = document.getElementById('descripcion8');
+const estaticc3 = document.getElementById('t3');
+const sertitulo = document.getElementById('titulo-ser');
+const sersubtitulo = document.getElementById('subser');
 
 
 
@@ -222,8 +251,6 @@ function establecerIdioma(idioma) {
     idiomaActual.getElementsByTagName('img')[0].src= `imagenes/banderas/${idioma}.svg`;
     switch (idioma) {
         case 'usa':
-            titulo.textContent = 'CapiDeveloper';
-            parrafo.textContent = 'Hello! I am a 23-year-old young person and I am currently studying Information Technology. I am passionate about the world of technology and I love sharing my knowledge with others. To achieve this, I have a YouTube channel where I upload videos every weekend.';
             certif.textContent = 'Certifications';
             pregunta1.textContent = '¿What do we offer?';
             txt1.textContent = 'Direct export';
@@ -265,24 +292,19 @@ function establecerIdioma(idioma) {
             subfot6.textContent = 'Products';
             subfot7.textContent = 'Our Services';
             subfot8.textContent = 'Quality';
-            boton1.textContent = 'explor';
+            boton1.textContent = 'Explore';
             barra1.textContent = 'Home';
-            barra2.textContent = 'US';
+            barra2.textContent = 'Know us';
             barra3.textContent = 'Products';
             barra4.textContent = 'Services';
-            barra5.textContent = 'Qualiti';
-            barra6.textContent = 'Contact';
-            titulos.textContent = 'CapiDeveloper';
-            parrafos.textContent = 'I am passionate about the world of technology and I love sharing my knowledge with others. To achieve this, I have a YouTube channel where I upload videos every weekend.';
-            boton11.textContent = 'Explor';
-            pregunta2.textContent = 'Who we are'
+            barra5.textContent = 'Quality';
+            barra6.textContent = 'Contact us'
+            
             
            
             break;
 
         case 'latino':
-            titulo.textContent = 'CapiDeveloper';
-            parrafo.textContent = '¡Hola! Soy una persona joven de 23 años y actualmente estoy cursando la carrera de Tecnologías de la Información. Soy apasionado por el mundo de la tecnología y me encanta compartir mis conocimientos con los demás. Para lograr esto, tengo un canal de YouTube donde subo videos cada fin de semana.';
             certif.textContent= 'Certificaciones';
             pregunta1.textContent= '¿Que Ofrecemos?';
             txt1.textContent = 'Exportación directa';
@@ -330,12 +352,9 @@ function establecerIdioma(idioma) {
             barra3.textContent = 'Productos';
             barra4.textContent = 'Servicios';
             barra5.textContent = 'Calidad';
-            barra6.textContent = 'Contacto';
-            titulos.textContent = 'CapiDeveloper';
-            parrafos.textContent = 'Información. Soy apasionado por el mundo de la tecnología y me encanta compartir mis conocimientos con los demás. Para lograr esto, tengo un canal de YouTube donde subo videos cada fin de semana.';
-            boton11.textContent = 'Explorar';
-            pregunta2.textContent = '¿Quienes somos?'
-                
+            barra6.textContent = 'Contacto'
+            
+           
                 
             break;
         default:
@@ -343,6 +362,7 @@ function establecerIdioma(idioma) {
     }
 }
 
+            
 document.addEventListener('DOMContentLoaded',()=>{
     switch (navigator.language) {
         case 'es':
