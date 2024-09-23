@@ -48,7 +48,7 @@ const footer = document.querySelector("footer");
 
  header.innerHTML= `
   <div class="banner">
-            <input type="checkbox" id="check">
+            
             
             <video autoplay loop muted plays-inline>
                 <source src="video/principal.mp4" type="video/mp4">
@@ -152,7 +152,11 @@ const pregunta1 = document.getElementById('titulo-p1');
 const txt1 = document.getElementById('text1');
 const txt2 = document.getElementById('text2');
 const txt3 = document.getElementById('text3');
+const txt31 = document.getElementById('text3-1');
+const txt32 = document.getElementById('text3-2');
 const txt4 = document.getElementById('text4');
+const txt41 = document.getElementById('text4-1');
+const txt42 = document.getElementById('text4-2');
 const titulo2 = document.getElementById('titulo-p2');
 const conte1 = document.getElementById('contador-1');
 const conte2 = document.getElementById('contador-2');
@@ -282,8 +286,12 @@ function establecerIdioma(idioma) {
             pregunta1.textContent = 'What we offer?';
             txt1.textContent = 'Direct export';
             txt2.textContent = 'Trading Services';
-            txt3.textContent = 'Coffee Milling service';
-            txt4.textContent = 'National sales and export of roasted coffee';
+            txt3.textContent = 'Piling Service';
+            txt31.textContent = 'Green Coffee';
+            txt32.textContent = 'in grain';
+            txt4.textContent = 'National sale and';
+            txt41.textContent = 'coffee export';
+            txt42.textContent = 'Roasted and Ground';
             titulo2.textContent = 'Our Main Markets';
             conte1.textContent = 'Partners';
             conte2.textContent = 'Annual Containers';
@@ -336,8 +344,12 @@ function establecerIdioma(idioma) {
             pregunta1.textContent= '¿Que Ofrecemos?';
             txt1.textContent = 'Exportación directa';
             txt2.textContent = 'Servicio de Trading';
-            txt3.textContent = 'Servicio de Pilado de Café Verde en Grano';
-            txt4.textContent = 'Venta nacional y de exportación de Café Tostado y Molido';
+            txt3.textContent = 'Servicio de Pilado';
+            txt31.textContent = 'de Café Verde';
+            txt32.textContent = 'en Grano';
+            txt4.textContent = 'Venta nacional y de';
+            txt41.textContent = 'exportación de Café';
+            txt42.textContent = 'Tostado y Molido';
             titulo2.textContent = 'Nuestros Principales Mercados';
             conte1.textContent = 'Socios';
             conte2.textContent = 'Contenedores Anual';
