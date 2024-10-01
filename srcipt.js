@@ -90,7 +90,7 @@ const footer = document.querySelector("footer");
             <div class="content-i">
                 <h1>CAC BAGUA <span>GRANDE</span></h1>
                 <div>
-                    <a href="#cert"><button type="button" id="btn">Explorar</button></a>
+                    <a href="#pag1"><button type="button" id="btn">Explorar</button></a>
                 </div>
             </div>
         </div>    

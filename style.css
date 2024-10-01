@@ -32,7 +32,7 @@ html{
 }
 .navbar{
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -61,13 +61,15 @@ html{
   list-style: none;
   display: inline-block;
   margin: 20px;
+  align-items: center;
+  
 }
 .navbar ul li a{
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  font-weight: 600;
-  padding: 12px;
+  font-weight: 550;
+  padding: 15px;
 }
 li a:hover{
   background: white;
@@ -147,20 +149,21 @@ button:hover{
   padding-left: 0;
   list-style: none;
   position: absolute;
-  top: 90px;
+  top: 95px;
   display: flex;
   flex-direction: column;
   visibility: hidden; 
-  
+
 }
 .idioma{
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
   border: 1px solid rgba(219, 219, 219);
   position: relative;
+  
 }
 .idioma:hover{
   background-color: rgba(228, 228, 228, 0.386);
@@ -174,13 +177,14 @@ button:hover{
   justify-content: end;
   width: 5%;
   margin: auto;
+ 
 }
 .idiomas li{
   width: 100%;
 }
 .idiomas li a {
   display: block;
-  padding: 0px;
+  padding: 12px;
   font-size: 10px;
 }
 .idiomas li a:hover{
@@ -461,11 +465,6 @@ button:hover{
   font-weight: 600;
   font-family: "DM Sans", sans-serif;
 }
-.presentacion .sec1 p{
-    font-size: 1.5rem;
-    text-align: center;
-    text-align: justify;
-}
 .counters{
 	padding: 3em 2em;
 	background: linear-gradient(rgba(5, 7, 12, 0.46), rgba(5, 7, 12, 0.46)), url(Imagenes/cesta.jpg);
@@ -532,6 +531,14 @@ button:hover{
     position: relative;
     top: 55px;
   }
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+    background-position: center;
+    background-size: center;
+    overflow: hidden;
+  }
   .navbar{
     width: 100%;
     padding: 0px;
@@ -540,16 +547,17 @@ button:hover{
     align-items: center;
     justify-content: space-between;
     background-color: #017143;
-    display: inline-block;
+    overflow: hidden;
+   
   }
   .fndo{
     background: 0;
     align-items:center;
     padding: 0px;
-    border-radius: 0;
+    border-radius: 0;   
   }
   .logo{
-    width: 150px;
+    width: 130px;
     cursor: pointer;
     margin-left: 5px;
     align-items: center;
@@ -560,18 +568,32 @@ button:hover{
   .navbar ul li{
     list-style: none;
     display: inline-block;
-    margin: 10px;
+    margin: 5px;
+    align-items: center;
   }
   .navbar ul li a{
     text-decoration: none;
     text-transform: uppercase;
     color: white;
+    font-size: 10px;
     font-weight: 600;
-    padding: 12px;
+    padding: 8px;
+  }
+  li a:hover{
+    background: white;
+    transition: 0.6s;
+    border-radius: 30px;
+  }
+  .navbar a:hover{
+    color: black;
   }
   .cert{
     width: 100%;
     min-width: 0;
+    overflow: hidden;
+  }
+  .cert .logos{
+    width: 100%;
   }
   .cert .certificacion h3{
     font-size: 3em;
@@ -582,6 +604,7 @@ button:hover{
     padding: 0px;
     display: grid;
     margin: 0px;
+    overflow: hidden;
   }
   .presentacion .img-pr{
     width: 100%;
@@ -591,22 +614,31 @@ button:hover{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 100px);
-    grid-gap: 50px;
+    grid-gap: 60px;
   }
   .presentacion .img-pr img {
-    width: 70px;
+    
+    width: 100%;
     height: 180px;
     border-radius: 5px;
     object-fit: cover;
   }
   .presentacion .sec1{
     width: 100%;
-    justify-content: flex-start; 
   }
-  .presentacion .img-pr img {
-    max-width: 100%;
-    position: relative;
-    width: 100%;
+  .presentacion .sec1 h2{
+    color: #333;
+    font-size: 3.4em;
+    line-height: 1.4em;
+    font-weight: 500;
+    align-items: center;
+    
+  }
+  .presentacion .sec1 h2 span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
   }
   .img-pr p{
     display: flex;
@@ -994,10 +1026,12 @@ tbody .t1{
   position: relative;
   width: 100%;
   min-height: 100vh;
+  overflow: hidden;
 }
 .ultimo-p .slide{
   width: 100%;
 }
+
 .ultimo-p .slide .item{
   width: 200px;
   height: 300px;
@@ -1009,6 +1043,11 @@ tbody .t1{
   background-size: cover;
   display: inline-block;
   transition: 0.5s;
+  object-fit: cover;
+  object-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .slide .item:nth-child(1),
@@ -1023,18 +1062,18 @@ tbody .t1{
 
 
 .slide .item:nth-child(3){
-  left: 70%;
+  left: 67%;
 }
 .slide .item:nth-child(4){
-  left: calc(70% + 220px);
+  left: calc(67% + 220px);
 }
 .slide .item:nth-child(5){
-  left: calc(70% + 440px);
+  left: calc(67% + 440px);
 }
 
 /* here n = 0, 1, 2, 3,... */
 .slide .item:nth-child(n + 6){
-  left: calc(50% + 660px);
+  left: calc(67% + 600px);
   opacity: 0;
 }
 .item .content{
@@ -1056,7 +1095,7 @@ tbody .t1{
 
 .item .content{
   border: 3px solid #fafafa10;
-  background: #fafafa10;
+  background: #7b4c46;
   border-radius: 1rem;
   backdrop-filter: blur(0.5rem);
   margin: 0 auto;
@@ -1658,7 +1697,7 @@ min-height: 100vh;
     width: 100%;
     align-items: center;
     text-align: center;
-    top: 40px;
+    top: 80px;
     justify-content: center;
     padding: 50px;
   }
@@ -1761,6 +1800,7 @@ min-height: 100vh;
   background-position: center;
   background-size: cover;
   align-items: center;
+  overflow: hidden;
 }
 .N-inicio .row {
   right: 2px;
@@ -1810,7 +1850,7 @@ min-height: 100vh;
   align-items: center;
   padding-left: 0px;
   bottom: 60px;
- 
+  
 }
 .c-direccion .cont-direccion{
   display: grid;
@@ -2141,6 +2181,7 @@ min-height: 100vh;
     display: grid;
     align-items: center;
     background-position: center;
+    overflow: hidden;
   }
   .N-inicio2 .content{
     display: grid;
@@ -2278,6 +2319,180 @@ min-height: 100vh;
     padding-bottom: 1.5%;
     
   }
+  .esfera {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9c5417;
+    clip-path: circle(250px at right 300px); 
+    background-image: url(Imagenes/blog-pattern-bg.png) ;
+  }
+  .esfera-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(250px at left 300px);
+    justify-content: flex-start;
+    background-image: url(Imagenes/blog-pattern-bg.png);
+  }
+  .servicio-I{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(Imagenes/todo.jpg);
+    
+  }
+  .se-inicio .textbox{
+    position: relative;
+    width: 60%;
+    top: 15%;
+    z-index: 1;
+    
+  }
+  .se-inicio .textbox-1{
+    position: relative;
+    width: 60%;
+    margin: 0;
+    align-items: center;
+    align-items: center;
+    left: 0%;
+    top: 15%;
+    z-index: 1;
+  }
+  .se-inicio {
+    position: absolute;
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    
+  }
+  .se-inicio .textbox h2{ 
+    font-size: 2.5em;
+    line-height: 1.4em;
+    font-weight: 500;
+  }
+  .se-inicio .textbox-1 h2{
+    font-size: 2.5em;
+    line-height: 1.4em;
+    font-weight: 500;  
+  }
+  .se-inicio .textbox h2 span {
+    font-size: 0.9em;
+    font-weight: 900;
+    font-family: "DM Sans", sans-serif;   
+  }
+  .se-inicio .textbox-1 h2 span {
+    font-size: 0.9em;
+    font-weight: 900;
+    font-family: "DM Sans", sans-serif;   
+  }
+  .se-inicio .textbox p{
+    color: #333;
+    font-size: 0.9em;
+  } 
+  .se-inicio .textbox-1 p{
+    color: #333;
+    font-size: 0.9em;
+  }
+  .se-inicio .videobox img{
+    width: 300px;
+    overflow: hidden;
+    object-fit: fill;
+    border-radius: 15px;
+    background-size: cover; 
+   }
+   .se-inicio .videobox-1 img{
+    width: 300px;
+    overflow: hidden;
+    object-fit: fill;
+    border-radius: 15px;
+    background-size: cover; 
+    
+   }
+   .se-inicio .videobox {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-right: 100px;
+    margin-top: 0px;
+  }
+  .se-inicio .videobox-1 {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    padding-right: 100px;
+    margin-top: 0px;
+    
+  }
+  .idiomas{
+    padding-left: 0;
+    list-style: none;
+    position: absolute;
+    top: 75px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden; 
+    overflow: hidden;
+  
+  }
+  .idioma{
+    text-decoration: none;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid rgba(219, 219, 219);
+    position: relative;
+    overflow: hidden;
+    
+  }
+
+  .translate img{
+    width: 12px;
+    height: 12px;
+  }
+  .translate{
+    display: grid;
+    justify-content: end;
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+    padding-left: -55px;
+   
+  }
+  .idiomas li{
+    width: 100%;
+  }
+  .idiomas li a {
+    display: block;
+    padding: 0px;
+    font-size: 2px;
+  }
+  .idiomas li a:hover{
+    background-color: none;
+  }
+  .idiomas li img{
+    border-radius: 50%;
+  }
+  .toggle{
+    visibility: visible;
+  }
+  .info{
+    width: 50%;
+  }
+
 }
 .in-sec{
   width: 450px;
