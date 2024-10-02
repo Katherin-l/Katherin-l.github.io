@@ -54,8 +54,6 @@ html{
   align-items: center;
   padding-right: 12px;
   background-size: cover;
-  
- 
 }
 .navbar ul li{
   list-style: none;
@@ -356,8 +354,6 @@ button:hover{
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 180px);
   grid-gap: 180px;
-
-  
 }
 .presentacion .img-pr img {
   max-width: 500px;
@@ -457,7 +453,6 @@ button:hover{
   font-size: 4em;
   line-height: 1.4em;
   font-weight: 500;
-  
 }
 .presentacion .sec1 h2 span{
   color: #017143;
@@ -601,7 +596,7 @@ button:hover{
   .presentacion{
     position: relative;
     width: 100%;
-    padding: 0px;
+    padding: 100px;
     display: grid;
     margin: 0px;
     overflow: hidden;
@@ -1786,112 +1781,10 @@ min-height: 100vh;
   width: 345px;
   border-radius: 1.2rem;
 }
-.N-inicio {
-  width: 100%;
-  padding-top: 0px;
-  display: grid;
-  margin: auto;
-  max-width: 100vh;
-  background-position: center;
-  background-size: cover;
-  align-items: center;
-  overflow: hidden;
-  background: url(Imagenes/todo.jpg);
-}
-.N-inicio .row {
-  right: 2px;
-  width: 100%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 50px;
-  white-space: initial;
-  font-size: 1.2em;
-  overflow: hidden;
-}
-.N-inicio .Mi img{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.todo-m{
-  width: 100%;
-  display: grid;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
-}
-.Md .cuadro-m1{
-  padding: 15px;
-  margin: 20px;
-  text-align: justify; 
-}
-.Md .cuadro-m{
-  padding: 15px;
-  margin: 20px;
-  text-align: justify; 
-}
-.todo-m .Md{
-  width: 100%;
-}
-.todo-m .Mi{
-  width: 100%;
-  overflow: hidden;
-}
 .Titulo h1{
   font-size: 4rem;
 }
 
-.c-direccion{
-  width: 100%;
-  align-items: center;
-  padding-left: 0px;
-  bottom: 70px;
-  overflow: hidden;
-  margin: 0;
-  
-  
-}
-.c-direccion .cont-direccion{
-  display: grid;
-  width: 100%;
-  align-items: center;
-  overflow: hidden;
-}
-.direccion-1{
-  width: 100%;
-}
-.img-direccion{
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  overflow: hidden;
-}
-.img-direccion img{
-  width: 100%;
-  height: 100%;
-}
-
-.N-cont {
-  width: 100%;
-  background-size: cover;
-  align-items: center;
-  margin: auto;
-  margin-bottom: auto;
-}
-.redes .icon {
-  position: relative;
-  background: #fff;
-  border-radius: 50%;
-  margin: 5px;
-  width: 50px;
-  height: 50px;
-  font-size: 18px;
-  background-position: center;
-  margin-bottom: 50px;
-}
 
 
 }
@@ -2288,7 +2181,7 @@ min-height: 100vh;
   .item .content{
     position: absolute;
     top: 40%;
-    left: 60px;
+    left: 40px;
     width: 220px;
     text-align: left;
     color: #eee;
@@ -2356,32 +2249,30 @@ min-height: 100vh;
     align-items: center;
     background: url(Imagenes/todo.jpg);
     
+    
   }
   .se-inicio .textbox{
     position: relative;
-    width: 60%;
-    top: 15%;
+    width: 80%;
+    top: 10%;
     z-index: 1;
-    
   }
   .se-inicio .textbox-1{
-    position: relative;
-    width: 60%;
+    position: absolute;
+    width: 80%;
     margin: 0;
     align-items: center;
-    align-items: center;
     left: 0%;
-    top: 15%;
+    top: 10%;
     z-index: 1;
   }
   .se-inicio {
-    position: absolute;
+    position: relative;
     width: 100%;
     display: grid;
     justify-content: space-between;
     align-items: center;
-    min-height: 100vh;
-    
+    min-height: 100vh;  
   }
   .se-inicio .textbox h2{ 
     font-size: 2.5em;
@@ -2399,7 +2290,7 @@ min-height: 100vh;
     font-family: "DM Sans", sans-serif;   
   }
   .se-inicio .textbox-1 h2 span {
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: 900;
     font-family: "DM Sans", sans-serif;   
   }
@@ -2433,14 +2324,36 @@ min-height: 100vh;
     justify-content: center;
     padding-right: 100px;
     margin-top: 0px;
+      
   }
   .se-inicio .videobox-1 {
     width: 100%;
     display: grid;
+    align-items: center;
     justify-content: center;
-    padding-right: 100px;
+    padding-left: 40px;
     margin-top: 0px;
+    padding-top: 140%;
     
+    
+  }
+  .in-sec{
+    min-height: auto;
+  }
+  .in-sec h1{
+    width: 80%;
+    
+  }
+  .containersc{
+    width: 80%;
+    position: relative;
+    background: #e3e3e3;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    transform: translateY(-95%) scaleY(0);
+    transition: 1s;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
   }
   .idiomas{
     padding-left: 0;
@@ -2507,6 +2420,123 @@ min-height: 100vh;
     font-size: 5rem;
     background-size: cover;
   }
+  .N-inicio {
+    width: 100%;
+    padding-top: 0px;
+    display: grid;
+    margin: auto;
+    
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    overflow: hidden;
+    background: url(Imagenes/todo.jpg);
+  }
+  .N-inicio .row {
+    right: 2px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+    white-space: initial;
+    font-size: 1.2em;
+    overflow: hidden;
+  }
+  .N-inicio .Mi img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .todo-m{
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+  .Md .cuadro-m1{
+    padding: 15px;
+    margin: 20px;
+    text-align: justify; 
+  }
+  .Md .cuadro-m{
+    padding: 15px;
+    margin: 20px;
+    text-align: justify; 
+  }
+  .todo-m .Md{
+    width: 100%;
+  }
+  .todo-m .Mi{
+    width: 100%;
+    overflow: hidden;
+  }
+  .c-direccion{
+    width: 100%;
+    align-items: center;
+    padding-left: 0px;
+    bottom: 70px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0%;
+  
+  }
+  .c-direccion .cont-direccion{
+    display: grid;
+    width: 100%;
+    align-items: center;
+    
+  }
+  .direccion-1{
+    width: 320px;
+  }
+  .img-direccion{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+  }
+  .img-direccion img{
+    width: 100%;
+    height: 100%;
+  }
+  .N-cont {
+    width: 100%;
+    background-size: cover;
+    align-items: center;
+    margin: auto;
+    margin-bottom: auto;
+  }
+  .redes {
+    display: inline-flex;
+    list-style: none;
+    min-height: 100%;
+    width: 100%;
+    padding-top: 0px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    margin-bottom: 0%;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  .redes .icon {
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 5px;
+    width: 28px;
+    height: 25px;
+    font-size: 18px;
+    background-position: center;
+    margin-bottom: 20px;
+    
+  }
 
 }
 .in-sec{
@@ -2551,6 +2581,189 @@ min-height: 100vh;
 .active{
   transform: translateY(0) scale(1);
   
+}
+@media (max-width: 1024px){
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+    background-position: center;
+    background-size: center;
+  }
+  .navbar{
+    width: 100%;
+    padding: 6px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #017143;
+  }
+  .logo{
+    width: 130px;
+    cursor: pointer;
+    margin-left: 5px;
+    align-items: center;
+    padding-right: 12px;
+    background-size: cover;
+  }
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+    align-items: center;
+    
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 550;
+    padding: 15px;
+  }
+  .content-i{
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 40%;
+  }
+  .content-i h1{
+    margin-top: 80px;
+    font-size: 90px;
+    font-weight: 800;
+    text-align: start;
+    color: #017143;
+    padding-left: 30px;
+    
+  }
+  .content-i h1 span{
+    margin-top: 80px;
+    font-size: 90px;
+    font-weight: 800;
+    text-align: start;
+    color: #fff;
+    
+  }
+  .content-i div{
+    padding-left: 30px;
+  }
+  .banner video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 100%;
+  }
+  @media(min-aspect-ratio: 16/9){
+    .banner video{
+        width: 100%;
+        height: auto;
+        
+    }
+  }
+  .presentacion{
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    display: grid;
+    margin: 0px;
+    overflow: hidden;
+  }
+  .presentacion .img-pr{
+    width: 100%;
+    align-items: center;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 180px);
+    grid-gap: 180px;
+  }
+  .presentacion .sec1{
+    width: 100%;
+    margin: 15px;
+    padding-bottom: 20px;
+  }
+  .presentacion .sec1 h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+    display: inline-block;
+  }
+  .presentacion .sec1 h2 span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+    display: inline-block;
+  }
+  .servicio-I{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(Imagenes/todo.jpg);
+    overflow: hidden;
+  }
+  .se-inicio .textbox{
+    position: relative;
+    max-width: 400px;
+  }
+  .se-inicio .textbox-1{
+    position: relative;
+    max-width: 400px;
+    margin: 0;
+    align-items:flex-start;
+    align-items: center;
+    left: -15%;
+   
+  }
+  .se-inicio .textbox h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;   
+  }
+  .se-inicio .textbox-1 h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;   
+  }
+  .se-inicio .textbox h2 span {
+    color: #65350F;
+    font-size: 1.1em;
+    font-weight: 900;
+    font-family: "DM Sans", sans-serif;   
+  }
+  .se-inicio .textbox-1 h2 span {
+    color: #65350F;
+    font-size: 1em;
+    font-weight: 900;
+    font-family: "DM Sans", sans-serif;   
+  }
+  .se-inicio .videobox img{
+    width: 450px;
+    overflow: hidden;
+    object-fit: fill;
+    border-radius: 15px;
+    background-size: cover; 
+   }
+   .se-inicio .videobox-1 img{
+    width: 450px;
+    overflow: hidden;
+    object-fit: fill;
+    border-radius: 15px;
+    background-size: cover; 
+   }
+   .in-sec{
+    width: 350px;
+  }
 }
 
 

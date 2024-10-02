@@ -102,7 +102,7 @@ footer.innerHTML= `
                     <h4 id="n1">Nosotros</h4>
                     <ul>
                         <li><a href="nosotros.html" id="sub-n1">Misión y Visión</a></li>
-                        <li><a href="#" id="sub-n2">Nuestro Historia</a></li>
+                        <li><a href="nosotros.html" id="sub-n2">Nuestro Historia</a></li>
                         <li><a href="#" id="sub-n3">Nuestro Equipo</a></li>
                         
                     </ul>
@@ -110,18 +110,18 @@ footer.innerHTML= `
                 <div class="footer-links">
                     <h4 id="n2">Ayuda</h4>
                     <ul>
-                        <li><a href="#" id="sub-n4">Registro</a></li>
-                        <li><a href="#" id="sub-n5">Contacto</a></li>
-                        <li><a href="#" id="sub-n6">Nosotros</a></li>
+                        <li><a href="contacto.html" id="sub-n4">Registro</a></li>
+                        <li><a href="contacto.html" id="sub-n5">Contacto</a></li>
+                        <li><a href="nosotros.html" id="sub-n6">Nosotros</a></li>
                         
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4 id=n3>Tienda</h4>
                     <ul>
-                        <li><a href="#" id="sub-n7">Productos</a></li>
-                        <li><a href="#" id="sub-n8">Nuestro Servicios</a></li>
-                        <li><a href="#" id="sub-n9">Calidad</a></li>
+                        <li><a href="productos.html" id="sub-n7">Productos</a></li>
+                        <li><a href="servicios.html" id="sub-n8">Nuestro Servicios</a></li>
+                        <li><a href="calidad.html" id="sub-n9">Calidad</a></li>
                         
                     </ul>
                 </div>
@@ -226,10 +226,12 @@ const protitulo = document.getElementById('title-pro');
 const protitulo1 = document.getElementById('title-pro2');
 const protitulo2 = document.getElementById('title-pro3');
 const protitulo3 = document.getElementById('title-pro4');
+const protitulo4 = document.getElementById('title-pro5');
 const des5 = document.getElementById('descripcion5');
 const des6 = document.getElementById('descripcion6');
 const des7 = document.getElementById('descripcion7');
 const des8 = document.getElementById('descripcion8');
+const des14 = document.getElementById('descripcion14');
 const estaticc3 = document.getElementById('t3');
 const sertitulo = document.getElementById('titulo-ser');
 const sersubtitulo = document.getElementById('subser');
