@@ -68,18 +68,18 @@ const footer = document.querySelector("footer");
                 <div class="translate">
             <a href="#" id="idioma" class="idioma">
                 <img src="" alt="Icono bandera">
-                <img src="Imagenes/banderas/bottom.svg" alt="Icono bottom">
+                <img src="banderas/bottom.svg" alt="Icono bottom">
             </a>
             <ul id="idiomas" class="idiomas">
                 <li class="opcion">
                     <a href="#">
-                        <img src="Imagenes/banderas/latino.svg" alt="Icono bandera">
+                        <img src="banderas/latino.svg" alt="Icono bandera">
                         <span>LATINO</span>
                     </a>
                 </li>
                 <li class="opcion">
                     <a href="#">
-                        <img src="Imagenes/banderas/usa.svg" alt="Icono bandera">
+                        <img src="banderas/usa.svg" alt="Icono bandera">
                         <span>USA</span>
                     </a>
                 </li>
@@ -281,7 +281,7 @@ opcionesArray.forEach((opcion)=>{
 })
 
 function establecerIdioma(idioma) {
-    idiomaActual.getElementsByTagName('img')[0].src= `imagenes/banderas/${idioma}.svg`;
+    idiomaActual.getElementsByTagName('img')[0].src= `banderas/${idioma}.svg`;
     switch (idioma) {
         case 'usa':
             certif.textContent = 'Certifications';
@@ -406,7 +406,8 @@ function establecerIdioma(idioma) {
             
 document.addEventListener('DOMContentLoaded',()=>{
     switch (navigator.language) {
-        case 'es':
+        case 'es-US':
+            case 'es':
             establecerIdioma('latino')
             break;
         
