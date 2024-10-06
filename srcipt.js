@@ -281,7 +281,7 @@ opcionesArray.forEach((opcion)=>{
 })
 
 function establecerIdioma(idioma) {
-    idiomaActual.getElementsByTagName('img')[0].src = `Imagenes/banderas/${idioma}.svg`;
+    idiomaActual.getElementsByTagName('img')[0].src = `banderas/${idioma}.svg`;
     switch (idioma) {
         case 'usa':
             certif.textContent = 'Certifications';

@@ -1,5 +1,5 @@
 function establecerIdioma(idioma) {
-    idiomaActual.getElementsByTagName('img')[0].src= `imagenes/banderas/${idioma}.svg`;
+    idiomaActual.getElementsByTagName('img')[0].src= `banderas/${idioma}.svg`;
     switch (idioma) {
         case 'usa':
             estaticc3.textContent = 'Services';
