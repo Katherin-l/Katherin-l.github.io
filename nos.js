@@ -1,6 +1,4 @@
 
-
- 
  function establecerIdioma(idioma) {
      idiomaActual.getElementsByTagName('img')[0].src= `banderas/${idioma}.svg`;
      switch (idioma) {
@@ -13,7 +11,7 @@
             des2.textContent = 'Our mission is to improve the quality of life of all co-op members while producing a coffee of superior quality. Providing marketing solutions, technical assistance, and short-term financing services will optimize economic, social, and environmental profitability throughout the production chain and commercialization of coffee.';
             des3.textContent = 'To be recognized as the main exporter of specialty coffee in the Amazon region by 2028 through outstanding business competitiveness, leadership capacity, and impeccable institutional image, promoting inclusive and sustainable businesses among its partners both national and international.';
             titlee2.textContent = 'OUR HISTORY';
-            des4.textContent = 'The Cooperative was founded on December 16, 1978, with headquarters in the district of Bagua Grande, province of Utcubamba, department of Amazonas, Peru. In the 1980s, thanks to its boom, the cooperative managed to build its own coffee processing plant in Bagua Grande and it exists to this day. Today, CAC BAGUA GRANDE LTDA is one of the most important cooperatives in the Amazon Region, directly supporting more than 3,000 people. These families have achieved stability in the area. From the end of the 90s, the first certifications for specialty coffees were obtained and has grow to its currents number of 308 members.'
+            des4.textContent = 'The Cooperative was founded on December 16, 1978, with headquarters in the district of Bagua Grande, province of Utcubamba, department of Amazonas, Peru. In the 1980s, thanks to its boom, the cooperative managed to build its own coffee processing plant in Bagua Grande and it exists to this day. Today, CAC BAGUA GRANDE LTDA is one of the most important cooperatives in the Amazon Region, directly supporting more than 3,000 people. These families have achieved stability in the area. From the end of the 90s, the first certifications for specialty coffees were obtained and has grow to its currents number of 308 members.';
             localisar1.textContent = 'Our Location';
             localisar2.textContent = 'Direction';
             localisar3.textContent = 'Jr.Abrahan Valdelomar Nº 232';
@@ -36,13 +34,22 @@
             subfot6.textContent = 'Products';
             subfot7.textContent = 'Our Services';
             subfot8.textContent = 'Quality';
+            local1.textContent = 'Our Location';
+            local2.textContent = 'Direction';
+            local3.textContent = 'Jr.Abrahan Valdelomar Nº 232';
+            local4.textContent = 'Grande';
+            local5.textContent = '(Uctubamba Amazonas - Perú)';
+            local6.textContent = 'Process Plant';
+            local7.textContent = 'Jr. Isidro Mamani Nº 120';
+            local8.textContent = 'Sector San Luis Bagua Grande',
+            local9.textContent = 'Uctubamba Amazonas - Perú)';
             boton1.textContent = 'Explore';
             barra1.textContent = 'Home';
             barra2.textContent = 'Know us';
             barra3.textContent = 'Products';
             barra4.textContent = 'Services';
             barra5.textContent = 'Quality';
-            barra6.textContent = 'Contact us';
+            barra6.textContent = 'Contact us'
             
 
             break;
@@ -56,7 +63,7 @@
             des2.textContent = 'Somos una organización cooperativa al servicio de sus socios y pequeños caficultores de la Región Amazonas, que tiene como misión brindar servicios de Comercialización, Asistencia técnica y financiamiento al corto plazo para optimizar la rentabilidad económica, social y medio ambiental en toda la cadena de producción y comercialización del café hasta el consumidor, logrando mejorar la calidad de vida de todos sus miembros alineados al desarrollo de la persona, la región y el país.';
             des3.textContent = 'Al 2028 la Cooperativa Agraria Cafetalera "Bagua Grande” Ltda, será reconocida como la principal exportadora de café especiales de la región Amazonas, destacando por su competitividad empresarial, capacidad de liderazgo e imagen institucional promoviendo negocios inclusivos y sostenibles entre sus socios nacionales e internacionales.';
             titlee2.textContent = 'Nuestra historia';
-            des4.textContent = 'La Cooperativa fue fundada el 16 de diciembre de 1978, con sede institucional en el distrito de Bagua Grande, provincia de Utcubamba,departamento de Amazonas, Perú. En la década de los 80 la cooperativa gracias a su gran auge logró la construcción de su local institucional. Actualmente la CAC Bagua Grande cuenta con una planta procesadora de café. A finales de los años 90 se obtuvo las primeras certificaciones para cafés especiales y en la actualidad está conformada por 308 socios. Hoy en día la CAC BAGUA GRANDE LTDA es una de las más importantes en la Región Amazónica, apoyando de forma directa a más de 3000 personas, actualmente estas familias han logrado su estabilidad en la zona.'
+            des4.textContent = 'La Cooperativa fue fundada el 16 de diciembre de 1978, con sede institucional en el distrito de Bagua Grande, provincia de Utcubamba,departamento de Amazonas, Perú. En la década de los 80 la cooperativa gracias a su gran auge logró la construcción de su local institucional. Actualmente la CAC Bagua Grande cuenta con una planta procesadora de café. A finales de los años 90 se obtuvo las primeras certificaciones para cafés especiales y en la actualidad está conformada por 308 socios. Hoy en día la CAC BAGUA GRANDE LTDA es una de las más importantes en la Región Amazónica, apoyando de forma directa a más de 3000 personas, actualmente estas familias han logrado su estabilidad en la zona.';
             localisar1.textContent = 'Nuestra Ubicacion';
             localisar2.textContent = 'Dirección';
             localisar3.textContent = 'Jr.Abrahan Valdelomar Nº 232';
@@ -79,13 +86,22 @@
             subfot6.textContent = 'Productos';
             subfot7.textContent = 'Nuestro Servicios';
             subfot8.textContent = 'Calidad';
+            local1.textContent = 'Nuestra Ubicacion';
+            local2.textContent = 'Dirección';
+            local3.textContent = 'Jr.Abrahan Valdelomar Nº 232';
+            local4.textContent = 'Grande';
+            local5.textContent = '(Uctubamba Amazonas - Perú)';
+            local6.textContent = 'Planta de procesos';
+            local7.textContent = 'Jr. Isidro Mamani Nº 120';
+            local8.textContent = 'Sector San Luis Bagua Grande',
+            local9.textContent = 'Uctubamba Amazonas - Perú)';
             boton1.textContent = 'Explorar';
             barra1.textContent = 'Inicio';
             barra2.textContent = 'Nosotros';
             barra3.textContent = 'Productos';
             barra4.textContent = 'Servicios';
             barra5.textContent = 'Calidad';
-            barra6.textContent = 'Contacto';
+            barra6.textContent = 'Contacto'
             
             break;
         default:

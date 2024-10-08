@@ -132,7 +132,7 @@ footer.innerHTML= `
                         <li><a href="calidad.html" id="sub-n9">Calidad</a></li>
                         
                     </ul>
-                    <h3>Amazonas- Peru</h3>
+                    <h3> Amazonas - Peru</h3>
                     
                 </div>
                 <div class="footer-links">
@@ -229,6 +229,15 @@ const des2 = document.getElementById('descripcion2');
 const des3 = document.getElementById('descripcion3');
 const titlee2 = document.getElementById('title-p3');
 const des4 = document.getElementById('descripcion4');
+const local1 = document.getElementById('subb-n3');
+const local2 = document.getElementById('subb-n4');
+const local3 = document.getElementById('subb-n5');
+const local4 = document.getElementById('subn6');
+const local5 = document.getElementById('subn7');
+const local6 = document.getElementById('subb-n6');
+const local7 = document.getElementById('subb-n7');
+const local8 = document.getElementById('subn8');
+const local9 = document.getElementById('subn9');
 const localisar1 = document.getElementById('subb-n3');
 const localisar2 = document.getElementById('subb-n4');
 const localisar3 = document.getElementById('subb-n5');
@@ -354,10 +363,10 @@ function establecerIdioma(idioma) {
             localisar31.textContent = 'Jr.Abrahan Valdelomar Nº 232';
             localisar41.textContent = 'Grande';
             localisar51.textContent = '(Uctubamba Amazonas - Perú)';
-            localisar6.textContent = 'Process Plant';
-            localisar7.textContent = 'Jr. Isidro Mamani Nº 120';
-            localisar8.textContent = 'Sector San Luis Bagua Grande',
-            localisar9.textContent = 'Uctubamba Amazonas - Perú)';
+            localisar61.textContent = 'Process Plant';
+            localisar71.textContent = 'Jr. Isidro Mamani Nº 120';
+            localisar81.textContent = 'Sector San Luis Bagua Grande',
+            localisar91.textContent = 'Uctubamba Amazonas - Perú)';
             boton1.textContent = 'Explore';
             barra1.textContent = 'Home';
             barra2.textContent = 'Know us';
