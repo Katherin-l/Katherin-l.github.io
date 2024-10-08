@@ -63,12 +63,12 @@ function establecerIdioma(idioma) {
                 default:
                     break;
     }
-}
+};
         
                     
 document.addEventListener('DOMContentLoaded',()=>{
     switch (navigator.language) {
-        case 'es':
+        case 'es-US':
             establecerIdioma('latino')
             break;
         

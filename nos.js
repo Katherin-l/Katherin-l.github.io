@@ -94,7 +94,7 @@
 }
 document.addEventListener('DOMContentLoaded',()=>{
     switch (navigator.language) {
-        case 'es':
+        case 'es-Us':
             establecerIdioma('latino')
             break;
         

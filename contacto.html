@@ -18,13 +18,15 @@
       <h1 id="t5">Contacto</h1>
     </section>
     <div class="Contacto" id="pag1">
-      <form action="" class="contact-left">
+      <form action="https://formsubmit.co/comercializacion@cacbaguagrande.pe" method="POST" class="contact-left">
        <div class="contact-left-title">
         <h2 id="reg">Registro</h2>
        </div> 
-       <input type="text" nombre="nombre" placeholder="Tu nombre" class="contact-inputs" required>
-       <input type="email" gmail="gmail" placeholder="Tu gmail" class="contact-inputs" required>
-       <textarea nombre="mensaje" placeholder=" mensaje" class="contact-inputs" required></textarea>
+       <input type="text" nombre="nombre" placeholder="Tu nombre" name="name" class="contact-inputs" required>
+       <input type="email" gmail="gmail" placeholder="Tu gmail"  name="email" class="contact-inputs" required>
+       <textarea nombre="mensaje" placeholder=" mensaje" name="subjet" class="contact-inputs" required></textarea>
+       <input type="hidden" name="_next" value="http://cacbaguagrande.pe/contacto.html">
+       <input type="hidden" name="_captcha" value="false">
        <button type="enviar" id="boton-cont">Enviar</button>
       </form>
       <div class="contact-right">

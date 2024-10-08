@@ -106,6 +106,10 @@ footer.innerHTML= `
                         <li><a href="#" id="sub-n3">Nuestro Equipo</a></li>
                         
                     </ul>
+                    <h3><span id="subb-n3">Nuestra Ubicacion</span>
+                    <br><span id="subb-n4">Dirección</span></h3>
+                    <p><span id="subb-n5">Jr. Abrahan Valdelomar Nº 232</span>
+                    <span id="subn6">Grande</span><span id="subn7">(Uctubamba Amazonas - Perú)</span></p>
                 </div>
                 <div class="footer-links">
                     <h4 id="n2">Ayuda</h4>
@@ -115,6 +119,10 @@ footer.innerHTML= `
                         <li><a href="nosotros.html" id="sub-n6">Nosotros</a></li>
                         
                     </ul>
+                     <h3 id="subb-n6">Planta de procesos</h3>
+                <p><span id="subb-n7">Jr. Isidro Mamani Nº 120</span><br>
+                <span id="subn8">Sector San Luis Bagua Grande</span><br><span id="subn9">(Uctubamba
+                Amazonas - Perú)</span></p>
                 </div>
                 <div class="footer-links">
                     <h4 id=n3>Tienda</h4>
@@ -124,6 +132,8 @@ footer.innerHTML= `
                         <li><a href="calidad.html" id="sub-n9">Calidad</a></li>
                         
                     </ul>
+                    <h3>Amazonas- Peru</h3>
+                    
                 </div>
                 <div class="footer-links">
                     <h4 id="n4">Siguenos</h4>
@@ -133,6 +143,7 @@ footer.innerHTML= `
                         <a href=""><i class="fab fa-tiktok"></i></a>
                         <a href=""><i class="fab fa-linkedin"></i></a>
                     </div>
+                    <p> © Copyright 2024, Katherine Lucero Purihuamán</p>
                 </div>
             </div>
         </div>
@@ -192,6 +203,15 @@ const subfot5 = document.getElementById('sub-n6');
 const subfot6 = document.getElementById('sub-n7');
 const subfot7 = document.getElementById('sub-n8');
 const subfot8 = document.getElementById('sub-n9');
+const localisar11 = document.getElementById('subb-n3');
+const localisar21 = document.getElementById('subb-n4');
+const localisar31 = document.getElementById('subb-n5');
+const localisar41 = document.getElementById('subn6');
+const localisar51 = document.getElementById('subn7');
+const localisar61 = document.getElementById('subb-n6');
+const localisar71 = document.getElementById('subb-n7');
+const localisar81 = document.getElementById('subn8');
+const localisar91 = document.getElementById('subn9');
 const boton1 = document.getElementById('btn');
 const barra1 = document.getElementById('br-1');
 const barra2 = document.getElementById('br-2');
@@ -285,7 +305,7 @@ function establecerIdioma(idioma) {
     switch (idioma) {
         case 'usa':
             certif.textContent = 'Certifications';
-            pregunta1.textContent = 'What we offer?';
+            pregunta1.textContent = 'What do we offer?';
             txt1.textContent = 'Direct export';
             txt2.textContent = 'Trading Services';
             txt3.textContent = 'Piling Service';
@@ -329,6 +349,15 @@ function establecerIdioma(idioma) {
             subfot6.textContent = 'Products';
             subfot7.textContent = 'Our Services';
             subfot8.textContent = 'Quality';
+            localisar11.textContent = 'Our Location';
+            localisar21.textContent = 'Direction';
+            localisar31.textContent = 'Jr.Abrahan Valdelomar Nº 232';
+            localisar41.textContent = 'Grande';
+            localisar51.textContent = '(Uctubamba Amazonas - Perú)';
+            localisar6.textContent = 'Process Plant';
+            localisar7.textContent = 'Jr. Isidro Mamani Nº 120';
+            localisar8.textContent = 'Sector San Luis Bagua Grande',
+            localisar9.textContent = 'Uctubamba Amazonas - Perú)';
             boton1.textContent = 'Explore';
             barra1.textContent = 'Home';
             barra2.textContent = 'Know us';
@@ -387,6 +416,15 @@ function establecerIdioma(idioma) {
             subfot6.textContent = 'Productos';
             subfot7.textContent = 'Nuestro Servicios';
             subfot8.textContent = 'Calidad';
+            localisar11.textContent = 'Nuestra Ubicacion';
+            localisar21.textContent = 'Dirección';
+            localisar31.textContent = 'Jr.Abrahan Valdelomar Nº 232';
+            localisar41.textContent = 'Grande';
+            localisar51.textContent = '(Uctubamba Amazonas - Perú)';
+            localisar61.textContent = 'Planta de procesos';
+            localisar71.textContent = 'Jr. Isidro Mamani Nº 120';
+            localisar81.textContent = 'Sector San Luis Bagua Grande',
+            localisar91.textContent = 'Uctubamba Amazonas - Perú)';
             boton1.textContent = 'Explorar';
             barra1.textContent = 'Inicio';
             barra2.textContent = 'Nosotros';
